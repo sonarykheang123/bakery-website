@@ -1,0 +1,13 @@
+@mixin df-jsc-alc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-alc{
+    display: flex;
+    align-items: center;
+}
+@mixin df-jsc-alc{
+    @include df-alc;
+    justify-content: space-between;
+}
