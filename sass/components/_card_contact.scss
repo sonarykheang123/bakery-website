@@ -1,0 +1,40 @@
+@import "./variable";
+@import "../mixins/groupmixin";
+
+.second_card{
+    @include df;
+    width: 80%;
+    margin-left: 200px;
+    gap: $gap  * 5;
+    .main_card{
+    width: 26%;
+    height: 50vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: $margin * 5;
+    img{
+        margin-top: 50px;
+        width: 70px;
+        border-radius: $border-radius + 24;
+    }
+    .text1{
+        margin: $margin;
+    }
+    span{
+        font-size: $font-size + 2;
+    }
+    p{
+        font-size: $font-size +2;
+    }
+    .star1{
+        color: orange;
+    }
+     
+}
+}
+
+.caption{
+    margin-top: $margin *5;
+    margin-left: $margin * 11;
+    color: $primary-color;
+}

@@ -45,6 +45,7 @@
     .list{
         @include df-fc;
         input{
+            outline: none;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             width: 120%;
             height: 5vh;
@@ -59,10 +60,8 @@
             @include df;
             border-radius: $border-radius - 12;
         }
-        
-
-    }
-    
+       
+    }   
 }
 @import './variable';
 @import '../mixins/groupmixin';

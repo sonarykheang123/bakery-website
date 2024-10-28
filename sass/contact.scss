@@ -4,11 +4,12 @@
 @import './components/navbar';
 @import './components/variable';
 @import './mixins/groupmixin';
+@import "./components/card_contact";
 
 
 
 .bg-img{
-    background-image: url(../image/contact/photo_2024-10-28_10-11-05.jpg);
+    background-image: url(https://media.istockphoto.com/id/1009993828/photo/buns-on-a-white-plate-with-ripe-raspberries-and-jam.jpg?s=612x612&w=0&k=20&c=czAFVnqrwG8qPSTxHaklBDOB_L4B2-TrNZ5CbGpsv4A=);
     @include bg-img;
     height: 80vh;
     .text{
