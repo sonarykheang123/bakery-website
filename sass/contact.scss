@@ -4,3 +4,30 @@
 @import './components/navbar';
 @import './components/variable';
 @import './mixins/groupmixin';
+
+
+
+.bg-img{
+    background-image: url(../image/contact/photo_2024-10-28_10-11-05.jpg);
+    @include bg-img;
+    height: 80vh;
+    .text{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        top: 30%;
+        right: 3%;
+        h1{
+            font-size: $font-size *3 + 6px;
+        }
+        h1, p{
+            text-align: center;
+            color: $primary-color;
+        }
+        p{
+            width: 48%;
+            margin: auto;
+        }
+    }
+}
+
