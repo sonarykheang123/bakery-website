@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .nav-contain {
   background: #FFB6C1;
 }
@@ -124,4 +126,29 @@ nav ul.logo-icon li a {
 nav ul.logo-icon span {
   font-size: 28px;
   color: white;
+}
+
+.bg-img {
+  background-image: url(../image/contact/photo_2024-10-28_10-11-05.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.bg-img .text {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 30%;
+  right: 3%;
+}
+.bg-img .text h1 {
+  font-size: 42px;
+}
+.bg-img .text h1, .bg-img .text p {
+  text-align: center;
+  color: #FF6F61;
+}
+.bg-img .text p {
+  width: 48%;
+  margin: auto;
 }

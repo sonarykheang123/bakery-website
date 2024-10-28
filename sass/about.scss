@@ -5,6 +5,14 @@
 @import './components/variable';
 @import './mixins/groupmixin';
 
+
+@import './main';
+@import './components/card';
+@import './components/footer';
+@import './components/navbar';
+@import './components/variable';
+@import './mixins/groupmixin';
+
 //banner
 .banner{
     background-image: url(../image/about/photo_2024-10-22_14-11-18.jpg);
