@@ -1,0 +1,66 @@
+@import "variable";
+@import "../mixins/groupmixin";
+// Contact-page
+.card{
+    background-color: $bg-color;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 80%;
+    margin: auto;
+    margin-top:$margin*5;
+    border-radius: $border-radius;
+    @include df;
+    .content{
+        margin: $margin;
+    }
+    .infor-card{
+        width: 40%;
+    }
+    .infor-card,
+    .form-card{
+        margin: $margin*3;
+        margin-left: 100px;
+    }
+    h1{
+        color: $primary-color;
+        font-size: $font-size + 20px;
+        
+    }
+    .contact-icon, .list{
+        margin: $margin;
+        gap: $gap - 4px;
+    }
+    .contact-icon{
+        @include df-alc;
+        padding: $padding + 4;
+    }
+    .contact-icon .material-symbols-outlined{
+        color: white;
+        background-color: $primary-color;
+        padding: $padding - 4;
+        border-radius: $border-radius;
+    }
+    .infor-card p{
+        margin-top: $margin + 4;
+    }
+    .list{
+        @include df-fc;
+        input{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            width: 120%;
+            height: 5vh;
+            border: none;
+            padding: $padding;
+            border-radius: $border-radius - 10px;
+        }
+    }
+    .list1{
+        input{
+            height: 14vh;
+            @include df;
+            border-radius: $border-radius - 12;
+        }
+        
+
+    }
+    
+}

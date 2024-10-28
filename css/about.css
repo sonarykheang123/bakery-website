@@ -72,6 +72,81 @@ nav ul.logo-icon span {
   list-style: none;
 }
 
+.card {
+  background-color: #FFF7EF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card .content {
+  margin: 12px;
+}
+.card .infor-card {
+  width: 40%;
+}
+.card .infor-card,
+.card .form-card {
+  margin: 36px;
+  margin-left: 100px;
+}
+.card h1 {
+  color: #FF6F61;
+  font-size: 32px;
+}
+.card .contact-icon, .card .list {
+  margin: 12px;
+  gap: 8px;
+}
+.card .contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+.card .contact-icon .material-symbols-outlined {
+  color: white;
+  background-color: #FF6F61;
+  padding: 8px;
+  border-radius: 24px;
+}
+.card .infor-card p {
+  margin-top: 16px;
+}
+.card .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card .list input {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 120%;
+  height: 5vh;
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+}
+.card .list1 input {
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px;
+}
+
 .nav-contain {
   background: #FFB6C1;
 }
@@ -197,6 +272,81 @@ nav ul.logo-icon span {
           box-sizing: border-box;
   font-family: "Poppins", serif;
   list-style: none;
+}
+
+.card {
+  background-color: #FFF7EF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card .content {
+  margin: 12px;
+}
+.card .infor-card {
+  width: 40%;
+}
+.card .infor-card,
+.card .form-card {
+  margin: 36px;
+  margin-left: 100px;
+}
+.card h1 {
+  color: #FF6F61;
+  font-size: 32px;
+}
+.card .contact-icon, .card .list {
+  margin: 12px;
+  gap: 8px;
+}
+.card .contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+.card .contact-icon .material-symbols-outlined {
+  color: white;
+  background-color: #FF6F61;
+  padding: 8px;
+  border-radius: 24px;
+}
+.card .infor-card p {
+  margin-top: 16px;
+}
+.card .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card .list input {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 120%;
+  height: 5vh;
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+}
+.card .list1 input {
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 12px;
 }
 
 .nav-contain {
