@@ -53,8 +53,8 @@
 }
 @mixin button-set {
     color: $white-color;
-    padding: $padding - 4px;
-    width: 180px;
+    padding: $padding - 8px;
+    width: 120px;
     border: none;
     background: $primary-color;
     border-radius: 18px;
