@@ -36,7 +36,9 @@
 @mixin button {
     color: $white-color;
     padding: $padding;
-    width: 200px;
+    width: 180px;
     border: none;
-    background: $bt-color;
+    background: $primary-color;
+    border-radius: 24px;
+    font-size: $font-size +6px;
 }
