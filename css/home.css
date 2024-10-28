@@ -57,6 +57,66 @@ nav ul.logo-icon span {
   list-style: none;
 }
 
+.card {
+  background-color: #FFF7EF;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 24px;
+  display: flex;
+}
+.card .content {
+  margin: 12px;
+}
+.card .infor-card {
+  width: 40%;
+}
+.card .infor-card,
+.card .form-card {
+  margin: 36px;
+  margin-left: 100px;
+}
+.card h1 {
+  color: #FF6F61;
+  font-size: 32px;
+}
+.card .contact-icon, .card .list {
+  margin: 12px;
+  gap: 8px;
+}
+.card .contact-icon {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.card .contact-icon .material-symbols-outlined {
+  color: white;
+  background-color: #FF6F61;
+  padding: 8px;
+  border-radius: 24px;
+}
+.card .infor-card p {
+  margin-top: 16px;
+}
+.card .list {
+  display: flex;
+  flex-direction: column;
+}
+.card .list input {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 120%;
+  height: 5vh;
+  border: none;
+  padding: 12px;
+  border-radius: 14px;
+}
+.card .list1 input {
+  height: 14vh;
+  display: flex;
+  border-radius: 12px;
+}
+
 .card-pop {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
