@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Moul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .nav-contain {
   background: #FFB6C1;
 }
@@ -99,4 +102,29 @@ nav ul.logo-icon li a {
 nav ul.logo-icon span {
   font-size: 28px;
   color: white;
+}
+
+header {
+  background-image: url(../image/home/background.jpg);
+  height: 86vh;
+  background-position: center;
+  background-size: cover;
+}
+header .head-container {
+  width: 90%;
+  margin: auto;
+  color: #FF6F61;
+  font-size: 28px;
+  position: relative;
+  top: 25%;
+}
+header .head-container button {
+  color: white;
+  padding: 12px;
+  width: 180px;
+  border: none;
+  background: #FF6F61;
+  border-radius: 24px;
+  font-size: 18px;
+  margin-top: 24px;
 }
