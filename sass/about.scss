@@ -6,3 +6,34 @@
 @import './mixins/groupmixin';
 
 
+@import './main';
+@import './components/card';
+@import './components/footer';
+@import './components/navbar';
+@import './components/variable';
+@import './mixins/groupmixin';
+
+//banner
+.banner{
+    background-image: url(../image/about/photo_2024-10-22_14-11-18.jpg);
+    @include bg-img;
+    height: 80vh;
+    .group-text{
+        width: 90%;
+        margin: auto;
+        position: relative;
+        top: 30%;
+        right: 3%;
+        h1{
+            font-size: $font-size *3 + 6px;
+        }
+        h1, p{
+            text-align: center;
+            color: $primary-color;
+        }
+        p{
+            width: 48%;
+            margin: auto;
+        }
+    }
+}
