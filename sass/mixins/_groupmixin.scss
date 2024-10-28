@@ -1,0 +1,42 @@
+@import '../components/variable';
+@mixin df-jcc-alc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin df-alc{
+    display: flex;
+    align-items: center;
+}
+@mixin df{
+    display: flex;
+}
+@mixin df-jcb {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin df-jcb-alc{
+    @include df-jcb;
+    align-items: center;
+}
+@mixin df-fw {
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin df-fc {
+    display: flex;
+    flex-direction: column;
+}
+// bg-img
+@mixin bg-img{
+    background-position: center;
+    background-size: cover;
+}
+//button
+@mixin button {
+    color: $white-color;
+    padding: $padding;
+    width: 200px;
+    border: none;
+    background: $bt-color;
+}

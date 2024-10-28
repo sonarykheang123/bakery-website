@@ -1,0 +1,46 @@
+@import '../components/variable';
+@import '../mixins/groupmixin';
+
+
+.nav-contain{
+    background: $third-color;
+}
+nav{
+    @include df-jcb-alc;
+    width: 90%;
+    margin: auto;
+    padding: $padding - 6px;
+    ul{
+        @include df;
+    }
+    ul .img-logo img{
+        width: 80px;
+    }
+    ul.center-nav li a{
+        padding: $padding*4;
+        color: $black-color;
+        text-decoration: none;
+        font-size: $font-size + 8px;
+    }
+    ul.center-nav .active{
+        text-decoration: underline $white-color $padding - 10px;
+        color: white;
+    }
+    ul.logo-icon{
+        @include df-alc;
+        border: none;
+        background: $primary-color;
+        padding: $padding - 2px;
+        border-radius: 24px;
+        gap: $gap;
+    }
+    ul.logo-icon li a{
+        color: $white-color;
+        text-decoration: none;
+    }
+    ul.logo-icon span{
+        font-size: $font-size * 2 + 4px;
+        color: $white-color;
+    }
+    
+}
