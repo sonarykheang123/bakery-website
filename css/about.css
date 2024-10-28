@@ -4,14 +4,22 @@
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: auto;
   padding: 6px;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 nav ul .img-logo img {
@@ -29,8 +37,12 @@ nav ul.center-nav .active {
   color: white;
 }
 nav ul.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   background: #FF6F61;
   padding: 10px;
@@ -49,7 +61,8 @@ nav ul.logo-icon span {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", serif;
   list-style: none;
 }
@@ -59,14 +72,22 @@ nav ul.logo-icon span {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: auto;
   padding: 6px;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 nav ul .img-logo img {
@@ -84,8 +105,12 @@ nav ul.center-nav .active {
   color: white;
 }
 nav ul.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   background: #FF6F61;
   padding: 10px;
@@ -99,4 +124,29 @@ nav ul.logo-icon li a {
 nav ul.logo-icon span {
   font-size: 28px;
   color: white;
+}
+
+.banner {
+  background-image: url(../image/about/photo_2024-10-22_14-11-18.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+.banner .group-text {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 30%;
+  right: 3%;
+}
+.banner .group-text h1 {
+  font-size: 42px;
+}
+.banner .group-text h1, .banner .group-text p {
+  text-align: center;
+  color: #FF6F61;
+}
+.banner .group-text p {
+  width: 48%;
+  margin: auto;
 }
