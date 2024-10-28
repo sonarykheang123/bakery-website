@@ -40,5 +40,23 @@
     border: none;
     background: $primary-color;
     border-radius: 24px;
-    font-size: $font-size +6px;
+    font-size: $font-size + 6px;
+}
+@mixin button-card {
+    color: $white-color;
+    padding: $padding - 6px;
+    width: 100px;
+    border: none;
+    background: $primary-color;
+    border-radius: 18px;
+    font-size: $font-size;
+}
+@mixin button-set {
+    color: $white-color;
+    padding: $padding - 8px;
+    width: 120px;
+    border: none;
+    background: $primary-color;
+    border-radius: 18px;
+    font-size: $font-size + 6px;
 }
