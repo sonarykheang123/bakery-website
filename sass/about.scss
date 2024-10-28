@@ -107,7 +107,8 @@ p{
         text-align: center;
         .head{
             h2{
-                color: $primary-color
+                color: $primary-color;
+                font-size: $font-size + 20;
             }
             p{
                 width: 60%;
@@ -146,6 +147,7 @@ p{
     margin-top: 80px;
     h2{
         color: $primary-color;
+        font-size: $font-size + 20;
     }
     .group-card{
         @include df-jcc-alc;
@@ -166,4 +168,36 @@ p{
             }
         }
     }
+}
+.baker{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    h2{
+        color: $primary-color;
+        font-size: $font-size + 20;
+    }
+    .baker-img{
+        @include df-jcb;
+        margin-top: 64px;
+        .img{
+            img{
+                width: 260px;
+                height: 260px;
+                border: none;
+                border-radius: 100%;
+            }
+            p{
+                // width: 10%;
+                // margin: auto;
+                // text-align: center;
+                margin-top: 56px;
+                font-size: $font-size + 12;
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 80px;
 }

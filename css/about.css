@@ -241,6 +241,7 @@ p {
 }
 .value-container .value .head h2 {
   color: #FF6F61;
+  font-size: 32px;
 }
 .value-container .value .head p {
   width: 60%;
@@ -283,6 +284,7 @@ p {
 }
 .service h2 {
   color: #FF6F61;
+  font-size: 32px;
 }
 .service .group-card {
   display: -webkit-box;
@@ -313,4 +315,38 @@ p {
 .service .group-card .card p {
   width: 80%;
   margin: auto;
+}
+
+.baker {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+.baker h2 {
+  color: #FF6F61;
+  font-size: 32px;
+}
+.baker .baker-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 64px;
+}
+.baker .baker-img .img img {
+  width: 260px;
+  height: 260px;
+  border: none;
+  border-radius: 100%;
+}
+.baker .baker-img .img p {
+  margin-top: 56px;
+  font-size: 24px;
+}
+
+.footer {
+  margin-top: 80px;
 }
