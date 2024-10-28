@@ -212,6 +212,14 @@ nav ul.logo-icon span {
   font-size: 18px;
 }
 
+.card-top {
+  width: 250px;
+  height: 400px;
+  background: red;
+}
+.card-top img {
+  width: 200px;
+}
 .nav-contain {
   background: #FFB6C1;
 }

@@ -64,6 +64,7 @@
     }
     
 }
+//home-page
 .card-pop{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     @include df-alc;
@@ -142,5 +143,17 @@
         button{
             @include button-set;
         }
+    }
+}
+.card-top{
+    width: 250px;
+    height: 400px;
+    background: red;
+
+    img{
+        width: 200px;
+    }
+    .body-card-top{
+
     }
 }

@@ -213,6 +213,14 @@ nav ul.logo-icon span {
   font-size: 18px;
 }
 
+.card-top {
+  width: 250px;
+  height: 400px;
+  background: red;
+}
+.card-top img {
+  width: 200px;
+}
 .nav-contain {
   background: #FFB6C1;
 }
@@ -310,6 +318,13 @@ header .head-container button {
   font-size: 36px;
 }
 .body-container .set-day h1 {
+  font-family: "Itim", cursive;
+  margin: 60px 0px;
+  color: #FF8C00;
+  font-weight: bold;
+  text-align: center;
+}
+.body-container .top-product h1 {
   font-family: "Itim", cursive;
   margin: 60px 0px;
   color: #FF8C00;
