@@ -59,15 +59,9 @@
             @include df;
             border-radius: $border-radius - 12;
         }
-        
-
     }
-    
 }
-@import './variable';
-@import '../mixins/groupmixin';
-
-
+//home-page
 .card-pop{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     @include df-alc;
@@ -75,6 +69,7 @@
     height: 296px;
     gap: $gap * 3;
     border-radius: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
     img{
         width: 250px;
         height: 296px;
@@ -85,66 +80,206 @@
         margin-bottom: $margin - 4px;
         font-size: $font-size + 6px;
     }
-    .body-card-pop .star{
+    .star{
         margin-top: $margin * 2;
         color: $seconary-color;
     }
-    .body-card-pop .black-star{
+    .black-star{
         color: $black-color;
     }
-    .body-card-pop button{
+    .body-card-pop{ 
+    button{
         @include button-card;
     }
+    button:hover{
+        background-color: $seconary-color;
+    }
+    }
+
 }
-.card-set{
-    @include df-alc;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 24px;
-    width: 90%;
-    margin: auto;
-    height: 400px;
-    margin-bottom: $margin * 4;
-    img{
-        width: 500px;
+.set-day{
+    .cards-set{
+        .card-set{
+        @include df-alc;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 24px;
+        width: 90%;
+        margin: auto;
         height: 400px;
-        border-top-left-radius: 24px;
-        border-bottom-left-radius: 24px;
+        margin-bottom: $margin * 4;
+        transition: transform 0.3s, box-shadow 0.3s;
+        img{
+            width: 500px;
+            height: 400px;
+            border-top-left-radius: 24px;
+            border-bottom-left-radius: 24px;
+        }
+        img:nth-child(2){
+            height: 400px;
+            width: 500px;
+            margin-left: $margin * 4 + 12px;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+        .body-card-set{
+            width: 45%;
+            margin-left: $margin *8;
+            h2{
+                font-family: "Itim", cursive;
+                color: $primary-color;
+                font-size: $font-size * 4;
+            }
+            h2:nth-child(2){
+                font-family: "Itim", cursive;
+                color: $primary-color;
+                font-size: $font-size * 4;
+            }
+            h2:nth-child(3){
+                font-family: "Itim", cursive;
+                color: $primary-color;
+                font-size: $font-size * 4;
+            }
+            p:nth-child(2){
+                margin-top: $margin * 2;
+                width: 70%;
+            }
+            p:nth-child(3){
+                margin: $margin $margin *0;
+                font-size: $font-size * 2;
+            }
+            button{
+                @include button-set;
+            }
+            button:hover{
+                background-color: $seconary-color;
+            }
+        }
     }
-    img:nth-child(2){
+} 
+}
+.cards-top{
+    @include df-jcb;
+    .card-top{
+        border-radius: 24px;
+        width: 280px;
         height: 400px;
-        width: 500px;
-        margin-left: $margin * 4 + 12px;
-        border-top-right-radius: 24px;
-        border-bottom-right-radius: 24px;
-    }
-    .body-card-set{
-        width: 45%;
-        margin-left: $margin *8;
-        h2{
-            font-family: "Itim", cursive;
-            color: $primary-color;
-            font-size: $font-size * 4;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        img{
+            width: 280px;
+            height: 260px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
         }
-        h2:nth-child(2){
-            font-family: "Itim", cursive;
-            color: $primary-color;
-            font-size: $font-size * 4;
-        }
-        h2:nth-child(3){
-            font-family: "Itim", cursive;
-            color: $primary-color;
-            font-size: $font-size * 4;
-        }
-        p:nth-child(2){
-            margin-top: $margin * 2;
-            width: 70%;
-        }
-        p:nth-child(3){
-            margin: $margin $margin *0;
-            font-size: $font-size * 2;
-        }
-        button{
-            @include button-set;
+        .body-card{
+            padding: $padding + 6px;
+            h4{
+                font-size: $font-size + 6px;
+            }
+            .star{
+                margin-top: $margin - 8px;
+                color: $seconary-color;
+                margin-top: $margin;
+            }
+            .black-star{
+                color: $black-color;
+            }
+            .footer-card{
+                @include df-jcb-alc;
+                gap: $gap;
+                p{
+                    font-size: $font-size + 6px;
+                }
+                button{
+                    @include button-card;
+                }
+                button:hover{
+                    background-color: $seconary-color;
+                }
+            }
         }
     }
 }
+.cards-menu{
+    @include df-jcb;
+    .card-menu{
+        border-radius: 24px;
+        width: 280px;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        img{
+            width: 200px;
+            height: 150px;
+            margin-top: $margin * 3;
+            margin-left: $margin * 3 + 4px;
+            transition: transform 0.3s;
+        }
+        .body-card{
+            padding: $padding + 6px;
+            h4{
+                font-size: $font-size + 6px;
+            }
+            .star{
+                margin-top: $margin - 8px;
+                color: $seconary-color;
+                margin-top: $margin;
+            }
+            .black-star{
+                color: $black-color;
+            }
+            .footer-card{
+                @include df-jcb-alc;
+                gap: $gap;
+                p{
+                    font-size: $font-size + 6px;
+                }
+                button{
+                    @include button-card;
+                }
+                button:hover{
+                    background-color: $seconary-color;
+                }
+            }
+        }
+    }
+}
+.card-menus{
+    .card-menu{
+        img{
+            width: 150px;
+            margin-left: $margin * 6;
+        }
+    }
+}
+.card-menus-two{
+    .card-menu{
+        img{
+            width: 100px;
+            margin-left: $margin * 7;
+        }
+    }
+}
+.card-menu:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+.card-top:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+.card-set:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+.card-pop:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+.card-menu img:hover {
+    transform: scale(1.05);
+  }
+
+
+
+

@@ -24,6 +24,7 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  transition: 0.4s linear;
 }
 nav ul.center-nav .active {
   -webkit-text-decoration: underline white 2px;
@@ -124,6 +125,7 @@ nav ul.logo-icon span {
   height: 296px;
   gap: 36px;
   border-radius: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .card-pop img {
   width: 250px;
@@ -135,11 +137,11 @@ nav ul.logo-icon span {
   margin-bottom: 8px;
   font-size: 18px;
 }
-.card-pop .body-card-pop .star {
+.card-pop .star {
   margin-top: 24px;
   color: #FF8C00;
 }
-.card-pop .body-card-pop .black-star {
+.card-pop .black-star {
   color: black;
 }
 .card-pop .body-card-pop button {
@@ -150,9 +152,14 @@ nav ul.logo-icon span {
   background: #FF6F61;
   border-radius: 18px;
   font-size: 12px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.card-pop .body-card-pop button:hover {
+  background-color: #FF8C00;
 }
 
-.card-set {
+.set-day .cards-set .card-set {
   display: flex;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -161,48 +168,49 @@ nav ul.logo-icon span {
   margin: auto;
   height: 400px;
   margin-bottom: 48px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.card-set img {
+.set-day .cards-set .card-set img {
   width: 500px;
   height: 400px;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
 }
-.card-set img:nth-child(2) {
+.set-day .cards-set .card-set img:nth-child(2) {
   height: 400px;
   width: 500px;
   margin-left: 60px;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
-.card-set .body-card-set {
+.set-day .cards-set .card-set .body-card-set {
   width: 45%;
   margin-left: 96px;
 }
-.card-set .body-card-set h2 {
+.set-day .cards-set .card-set .body-card-set h2 {
   font-family: "Itim", cursive;
   color: #FF6F61;
   font-size: 48px;
 }
-.card-set .body-card-set h2:nth-child(2) {
+.set-day .cards-set .card-set .body-card-set h2:nth-child(2) {
   font-family: "Itim", cursive;
   color: #FF6F61;
   font-size: 48px;
 }
-.card-set .body-card-set h2:nth-child(3) {
+.set-day .cards-set .card-set .body-card-set h2:nth-child(3) {
   font-family: "Itim", cursive;
   color: #FF6F61;
   font-size: 48px;
 }
-.card-set .body-card-set p:nth-child(2) {
+.set-day .cards-set .card-set .body-card-set p:nth-child(2) {
   margin-top: 24px;
   width: 70%;
 }
-.card-set .body-card-set p:nth-child(3) {
+.set-day .cards-set .card-set .body-card-set p:nth-child(3) {
   margin: 12px 0px;
   font-size: 24px;
 }
-.card-set .body-card-set button {
+.set-day .cards-set .card-set .body-card-set button {
   color: white;
   padding: 4px;
   width: 120px;
@@ -210,6 +218,156 @@ nav ul.logo-icon span {
   background: #FF6F61;
   border-radius: 18px;
   font-size: 18px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.set-day .cards-set .card-set .body-card-set button:hover {
+  background-color: #FF8C00;
+}
+
+.cards-top {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-top .card-top {
+  border-radius: 24px;
+  width: 280px;
+  height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cards-top .card-top img {
+  width: 280px;
+  height: 260px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.cards-top .card-top .body-card {
+  padding: 18px;
+}
+.cards-top .card-top .body-card h4 {
+  font-size: 18px;
+}
+.cards-top .card-top .body-card .star {
+  margin-top: 4px;
+  color: #FF8C00;
+  margin-top: 12px;
+}
+.cards-top .card-top .body-card .black-star {
+  color: black;
+}
+.cards-top .card-top .body-card .footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.cards-top .card-top .body-card .footer-card p {
+  font-size: 18px;
+}
+.cards-top .card-top .body-card .footer-card button {
+  color: white;
+  padding: 6px;
+  width: 100px;
+  border: none;
+  background: #FF6F61;
+  border-radius: 18px;
+  font-size: 12px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.cards-top .card-top .body-card .footer-card button:hover {
+  background-color: #FF8C00;
+}
+
+.cards-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-menu .card-menu {
+  border-radius: 24px;
+  width: 280px;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cards-menu .card-menu img {
+  width: 200px;
+  height: 150px;
+  margin-top: 36px;
+  margin-left: 40px;
+  transition: transform 0.3s;
+}
+.cards-menu .card-menu .body-card {
+  padding: 18px;
+}
+.cards-menu .card-menu .body-card h4 {
+  font-size: 18px;
+}
+.cards-menu .card-menu .body-card .star {
+  margin-top: 4px;
+  color: #FF8C00;
+  margin-top: 12px;
+}
+.cards-menu .card-menu .body-card .black-star {
+  color: black;
+}
+.cards-menu .card-menu .body-card .footer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.cards-menu .card-menu .body-card .footer-card p {
+  font-size: 18px;
+}
+.cards-menu .card-menu .body-card .footer-card button {
+  color: white;
+  padding: 6px;
+  width: 100px;
+  border: none;
+  background: #FF6F61;
+  border-radius: 18px;
+  font-size: 12px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+.cards-menu .card-menu .body-card .footer-card button:hover {
+  background-color: #FF8C00;
+}
+
+.card-menus .card-menu img {
+  width: 150px;
+  margin-left: 72px;
+}
+
+.card-menus-two .card-menu img {
+  width: 100px;
+  margin-left: 84px;
+}
+
+.card-menu:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-top:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-set:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-pop:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-menu img:hover {
+  transform: scale(1.05);
 }
 
 .nav-contain {
@@ -235,6 +393,7 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  transition: 0.4s linear;
 }
 nav ul.center-nav .active {
   -webkit-text-decoration: underline white 2px;
@@ -304,6 +463,8 @@ nav ul.logo-icon span {
   background: #FF6F61;
   border-radius: 24px;
   font-size: 18px;
+  transition: 0.4s linear;
+  cursor: pointer;
   padding: 8px;
   margin-left: 100px;
   font-size: 14px;
