@@ -1,0 +1,139 @@
+@import './main';
+@import './components/navbar';
+@import './components/footer';
+@import './components/variable';
+@import './mixins/groupmixin';
+
+body {
+    background:  $bg-color;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Itim", cursive;
+}
+p{
+    font-family: "Poppins", serif;
+}
+
+//banner
+
+.banner {
+    background-image: url(../image/order/banner-order.jpg);
+    @include bg-img;
+    height: 80vh;
+    h1 {
+        color: $primary-color;
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 30%;
+        font-size: $font-size *4;
+    }
+}
+.order-form{
+    font-size: $font-size * 4;
+    text-align: center;
+    font-family: "Itim", cursive;
+    margin-top: 54px;
+}
+.group-cards{
+    width: 90%;
+    margin: auto;
+    @include df-jcc-alc;
+    column-gap: $gap * 4;
+    margin-top: 64px;
+    .card {
+        background: $white-color;
+        width: 360px;
+        // height: 600px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        button {
+            width: 30px;
+            height: 30px;
+            background-color: $white-color;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border: solid 1px lightgray;
+        }
+        img { 
+            width: 80%;
+            margin: auto;
+        }
+        .footer-card {
+            row-gap: 14px;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            h4 {
+                color: blue;
+            }
+            .quantity{
+                p {
+                    margin-top: 14px;
+                    padding: 8px;
+                    border: none;
+                    background: $white-color;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .second {
+            background: #f1bbcb;
+        }
+    }
+}
+.content{
+    width: 90%;
+    margin: auto;
+    @include df-jcb-alc;
+    margin-top: 64px;
+    .coupun{
+        padding: 24px;
+        h3, h4{
+            margin-top: 24px;
+        }
+        h3{
+            border: solid 1px;
+            padding: 16px;
+        }
+        h4{
+            border: solid 1px;
+            padding: 12px;
+            width: 100px;
+            display: flex ;
+            justify-content: center;
+            color: $white-color;
+            background: $primary-color ;
+            border: none;
+        }
+    }
+    .total{
+        margin-bottom: 48px;
+        margin-right: 200px;
+
+        h3{
+            margin-top: 48px;
+        }
+    }
+}
+.done{
+    button{
+        margin-top: 48px;
+        @include df-jcc-alc;
+        margin: auto;
+        padding: 24px;
+        border: none;
+        border-radius: 12px;
+        background: $primary-color;
+        color: $white-color;
+        font-size: $font-size *2;
+        font-family: "Itim", cursive;
+    }
+}
+.footer{
+    margin-top: 80px;
+}
