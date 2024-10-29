@@ -41,6 +41,8 @@
     background: $primary-color;
     border-radius: 24px;
     font-size: $font-size + 6px;
+    transition: 0.4s linear;
+    cursor: pointer;
 }
 @mixin button-card {
     color: $white-color;
@@ -50,6 +52,8 @@
     background: $primary-color;
     border-radius: 18px;
     font-size: $font-size;
+    transition: 0.4s linear;
+    cursor: pointer;
 }
 @mixin button-set {
     color: $white-color;
@@ -59,4 +63,6 @@
     background: $primary-color;
     border-radius: 18px;
     font-size: $font-size + 6px;
+    transition: 0.4s linear;
+    cursor: pointer;
 }

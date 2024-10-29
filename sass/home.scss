@@ -19,11 +19,15 @@ header{
         margin: auto;
         color: $primary-color;
         font-size: $font-size * 2 + 4;
+        transition: 0.4s linear;
         position: relative;
         top: 25%;
         button{
             @include button;
             margin-top: $margin * 2;
+        }
+        button:hover{
+            background-color: $seconary-color;
         }
     }
 }
@@ -59,5 +63,105 @@ header{
         color: $seconary-color;
         font-weight: bold;
         text-align: center;
+    }
+    .menu-product .pastry-menu  h2{
+        font-family: "Itim", cursive;
+        margin: $margin * 5 $margin * 0;
+        color: $black-color;
+        font-weight: bold;
+    }
+    .info-product{
+        margin: $margin * 5 $margin * 0;
+        @include df-jcb-alc;
+        .info-product-left{
+            background-image: url(../image/home/card-info\ 01.png);
+            @include bg-img;
+            width: 48%;
+            height: 80vh;
+            border-radius: 24px;
+            padding: $padding * 3;
+            h1{
+                font-family: "Itim", cursive;
+            }
+            p{
+                margin: $margin $margin * 0;
+            }
+            button{
+                @include button-set;
+                padding: $padding - 2px;
+                font-size: $font-size + 2px;
+                transition: 0.4s linear;
+            }
+            button:hover{
+                background-color: $seconary-color;
+            }
+        }
+        .info-product-right{
+            background-image: url(../image/home/card-info\ 02.png);
+            @include bg-img;
+            width: 48%;
+            height: 80vh;
+            border-radius: 24px;
+            padding: $padding *3;
+            h1{
+                font-family: "Itim", cursive;
+                color: $white-color;
+            }
+            p{
+                margin: $margin $margin *0;
+                color: $white-color
+            }
+            button{
+                background: none;
+                border: 2px solid white;
+                border-radius: $border-radius - 6px;
+                padding: $padding - 2px;
+                width: 120px;
+                color: $white-color;
+                transition: 0.4s linear;
+            }
+            button:hover{
+                background-color: $seconary-color;
+            }
+        }
+    }
+    .promotion{
+        img{
+            width: 100%;
+            margin: $margin * 2 $margin * 0;
+        }
+    }
+    .customize{
+        h1{
+            font-family: "Itim", cursive;
+            margin: $margin * 5 $margin * 0;
+            color: $seconary-color;
+            font-weight: bold;
+            text-align: center;
+        }
+        .customer-info{
+            @include df-jcb;
+            .cus-info{
+                img{
+                    margin-left: $margin *9;
+                    width: 200px;
+                    height: 200px;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+                img:hover {
+                    transform: scale(1.05);
+                  }
+                h3{
+                    text-align: center;
+                    margin: $margin +6px $margin * 0;
+                }
+                p{
+                    font-size: $font-size + 2px;
+                    text-align: center;
+                    width: 80%;
+                    margin: auto;
+                }
+            }
+        }
     }
 }
