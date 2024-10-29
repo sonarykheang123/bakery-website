@@ -17,7 +17,7 @@
     }
     .infor-card,
     .form-card{
-        margin: $margin*3;
+        margin:$margin*3;
         margin-left: 100px;
     }
     h1{
@@ -45,6 +45,7 @@
     .list{
         @include df-fc;
         input{
+            outline: none;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             width: 120%;
             height: 5vh;
@@ -59,7 +60,8 @@
             @include df;
             border-radius: $border-radius - 12;
         }
-    }
+       
+    }   
 }
 //home-page
 .card-pop{
