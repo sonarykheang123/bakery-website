@@ -10,8 +10,10 @@
     width: 26%;
     height: 50vh;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: $margin * 5;
+    transition: transform 0.3s, box-shadow 0.3s;
+
     img{
         margin-top: 50px;
         width: 70px;
@@ -24,17 +26,34 @@
         font-size: $font-size + 2;
     }
     p{
-        font-size: $font-size +2;
+        font-size: $font-size + 2;
     }
     .star1{
-        color: orange;
+        color: orange;  
+    }
+    .star1 span{
+        font-size: $font-size + 6;
     }
      
 }
 }
+.i1 i{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.i1 i:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+.main_card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 .caption{
-    margin-top: $margin *5;
-    margin-left: $margin * 11;
     color: $primary-color;
+    margin: {
+        top: $margin *5;
+        left: $margin * 11;
+    }
 }

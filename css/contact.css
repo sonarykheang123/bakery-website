@@ -322,9 +322,13 @@ nav ul.logo-icon span {
   width: 26%;
   height: 50vh;
   text-align: center;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin-top: 60px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 .second_card .main_card img {
   margin-top: 50px;
@@ -343,15 +347,39 @@ nav ul.logo-icon span {
 .second_card .main_card .star1 {
   color: orange;
 }
+.second_card .main_card .star1 span {
+  font-size: 18px;
+}
+
+.i1 i {
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.i1 i:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.main_card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 .caption {
+  color: #FF6F61;
   margin-top: 60px;
   margin-left: 132px;
-  color: #FF6F61;
 }
 
 .bg-img {
-  background-image: url(https://media.istockphoto.com/id/1009993828/photo/buns-on-a-white-plate-with-ripe-raspberries-and-jam.jpg?s=612x612&w=0&k=20&c=czAFVnqrwG8qPSTxHaklBDOB_L4B2-TrNZ5CbGpsv4A=);
+  background-image: url(../image/contact/Background.jpg);
   background-position: center;
   background-size: cover;
   height: 80vh;
@@ -389,7 +417,7 @@ nav ul.logo-icon span {
   border-radius: 24px;
 }
 
-.BTN-CONTACT {
+.btn-contact {
   color: white;
   padding: 12px;
   width: 180px;
@@ -398,9 +426,12 @@ nav ul.logo-icon span {
   border-radius: 24px;
   font-size: 18px;
   padding: 8px;
-  margin-left: 100px;
   font-size: 14px;
   margin-top: 10px;
+}
+
+.btn {
+  margin-left: 100px;
 }
 
 h1 {

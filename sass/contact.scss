@@ -9,7 +9,7 @@
 
 
 .bg-img{
-    background-image: url(https://media.istockphoto.com/id/1009993828/photo/buns-on-a-white-plate-with-ripe-raspberries-and-jam.jpg?s=612x612&w=0&k=20&c=czAFVnqrwG8qPSTxHaklBDOB_L4B2-TrNZ5CbGpsv4A=);
+    background-image: url(../image/contact/Background.jpg);
     @include bg-img;
     height: 80vh;
     .text{
@@ -28,10 +28,12 @@
             width: 45%;
             font-size: $font-size + 6;
         }
+        
     }
     
     
 }
+
 
 .media {
       gap: 60px;
@@ -47,13 +49,15 @@
     
     
 }
-.BTN-CONTACT{
+.btn-contact{
     @include button;
     padding: $padding - 4;
-    margin-left: 100px;
     font-size: $font-size + 2;
     margin-top: 10px;
-
+    
+}
+.btn{
+    margin-left: 100px;
 }
 h1{
     font-family: "Itim", cursive;
