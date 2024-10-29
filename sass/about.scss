@@ -4,8 +4,6 @@
 @import './components/variable';
 @import './mixins/groupmixin';
 
-
-
 body {
     background:  $bg-color;
 }
@@ -36,7 +34,7 @@ p{
         p{
             width: 48%;
             margin: auto;
-            
+            margin-top: 24px;
         }
     }
 }
