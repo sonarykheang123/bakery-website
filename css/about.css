@@ -280,6 +280,14 @@ p {
 .card-container .card .group-icon img {
   width: 40px;
   margin-right: 20px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.card-container .card .group-icon img:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 .card-container .card button {
   color: white;
@@ -294,13 +302,28 @@ p {
   cursor: pointer;
   margin-top: 50px;
 }
+.card-container .card button:hover {
+  border: 2px solid;
+  background: none;
+  color: #FF6F61;
+}
 .card-container .img {
   padding: 0px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .card-container .img img {
   width: 100%;
   height: 100%;
   border-radius: 24px;
+}
+.card-container .img:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .value-container {
@@ -343,11 +366,30 @@ p {
 .value-container .value .content .left ul li, .value-container .value .content .right ul li {
   margin-top: 40px;
   border: none;
-  border-radius: 16px;
+  border-radius: 24px -8;
   padding: 8px;
   background: #FFF7EF;
+<<<<<<< HEAD
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+=======
+<<<<<<< HEAD
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+=======
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.value-container .value .content .left ul li:hover, .value-container .value .content .right ul li:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+>>>>>>> about-page
+>>>>>>> 11c118461a9d6b3d71cf96a4eae4144018eac294
 }
 .value-container .value .content img {
   width: 360px;
@@ -389,10 +431,22 @@ p {
   border-radius: 24px;
   background: white;
   padding: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .service .group-card .card p {
   width: 80%;
   margin: auto;
+}
+.service .group-card .card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .baker {
@@ -413,6 +467,10 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 64px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .baker .baker-img .img img {
   width: 260px;
@@ -421,10 +479,27 @@ p {
   border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+.baker .baker-img .img img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .baker .baker-img .img p {
   margin-top: 56px;
   font-size: 24px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.baker .baker-img .img p:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  font-weight: bold;
 }
 
 .footer {
