@@ -91,7 +91,7 @@ nav ul.logo-icon span {
   width: 40%;
 }
 .card .infor-card,
-.card .form-card {
+.card form {
   margin: 36px;
   margin-left: 100px;
 }
@@ -99,7 +99,7 @@ nav ul.logo-icon span {
   color: #FF6F61;
   font-size: 32px;
 }
-.card .contact-icon, .card .list {
+.card .contact-icon, .card .info {
   margin: 12px;
   gap: 8px;
 }
@@ -117,11 +117,12 @@ nav ul.logo-icon span {
   background-color: #FF6F61;
   padding: 8px;
   border-radius: 24px;
+  margin-right: 20px;
 }
 .card .infor-card p {
   margin-top: 16px;
 }
-.card .list {
+.card .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,17 +131,17 @@ nav ul.logo-icon span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.card .list input {
+.card .info input {
   outline: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 120%;
+  width: 110%;
   height: 5vh;
   border: none;
   padding: 12px;
   border-radius: 14px;
 }
-.card .list1 input {
+.card .info1 input {
   height: 14vh;
   display: -webkit-box;
   display: -ms-flexbox;
