@@ -202,7 +202,7 @@ footer .foot .get-toch .icon-page {
   margin: 18px 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: "Itim", cursive;
 }
 
@@ -406,8 +406,4 @@ p {
   color: white;
   font-size: 16px;
   font-family: "Itim", cursive;
-}
-
-.footer {
-  margin-top: 80px;
 }
