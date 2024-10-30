@@ -42,6 +42,7 @@ p{
     @include df-jcc-alc;
     column-gap: $gap * 4;
     margin-top: 64px;
+    transition: transform 0.3s, box-shadow 0.3s;
     .card {
         background: $white-color;
         width: 360px;
@@ -86,6 +87,10 @@ p{
         }
     }
 }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
+}
 .content{
     width: 90%;
     margin: auto;
@@ -120,7 +125,7 @@ p{
         }
     }
 }
-.done{
+.done-button{
     button{
         margin-top: 48px;
         @include df-jcc-alc;

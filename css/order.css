@@ -32,6 +32,8 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 nav ul.center-nav .active {
   -webkit-text-decoration: underline white 2px;
@@ -100,6 +102,8 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 nav ul.center-nav .active {
   -webkit-text-decoration: underline white 2px;
@@ -179,6 +183,10 @@ p {
      -moz-column-gap: 48px;
           column-gap: 48px;
   margin-top: 64px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 .group-cards .card {
   background: white;
@@ -231,6 +239,13 @@ p {
   background: #f1bbcb;
 }
 
+.card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .content {
   width: 90%;
   margin: auto;
@@ -277,7 +292,7 @@ p {
   margin-top: 48px;
 }
 
-.done button {
+.done-button button {
   margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
