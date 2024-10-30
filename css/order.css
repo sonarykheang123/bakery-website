@@ -132,10 +132,6 @@ nav ul.logo-icon span {
   color: white;
 }
 
-body {
-  background: #FFF7EF;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Itim", cursive;
 }
@@ -183,16 +179,16 @@ p {
      -moz-column-gap: 48px;
           column-gap: 48px;
   margin-top: 64px;
-  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
-  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 .group-cards .card {
   background: white;
   width: 360px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .group-cards .card button {
   width: 30px;
@@ -203,13 +199,21 @@ p {
   border: solid 1px lightgray;
 }
 .group-cards .card img {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.group-cards .card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .group-cards .card .footer-card {
   row-gap: 14px;
   width: 100%;
-  padding: 30px;
+  padding: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,11 +223,14 @@ p {
           flex-direction: column;
 }
 .group-cards .card .footer-card h4 {
-  color: blue;
+  color: #FF6F61;
+}
+.group-cards .card .footer-card .quantity {
+  margin-top: 14px;
 }
 .group-cards .card .footer-card .quantity p {
-  margin-top: 14px;
-  padding: 8px;
+  margin-top: 24px;
+  padding: 12px -4;
   border: none;
   background: white;
   width: 100px;
@@ -233,13 +240,15 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px -4;
 }
 .group-cards .card .second {
-  background: #f1bbcb;
+  background: #FFF7EF;
 }
-
-.card:hover {
+.group-cards .card:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -263,15 +272,26 @@ p {
 .content .coupun {
   padding: 24px;
 }
-.content .coupun h3, .content .coupun h4 {
-  margin-top: 24px;
+.content .coupun form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.content .coupun h3 {
-  border: solid 1px;
-  padding: 16px;
+.content .coupun form label {
+  font-family: "Itim", cursive;
+  font-size: 24px;
 }
-.content .coupun h4 {
-  border: solid 1px;
+.content .coupun form input {
+  border: none;
+  border-bottom: 1px solid;
+  margin-top: 50px;
+  outline: none;
+}
+.content .coupun button {
   padding: 12px;
   width: 100px;
   display: -webkit-box;
@@ -280,9 +300,13 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   background: #FF6F61;
   border: none;
+  margin-top: 50px;
 }
 .content .total {
   margin-bottom: 48px;
@@ -290,6 +314,7 @@ p {
 }
 .content .total h3 {
   margin-top: 48px;
+  color: #FF6F61;
 }
 
 .done-button button {
@@ -309,7 +334,7 @@ p {
   border-radius: 12px;
   background: #FF6F61;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Itim", cursive;
 }
 
