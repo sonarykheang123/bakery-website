@@ -4,9 +4,9 @@
 @import './components/variable';
 @import './mixins/groupmixin';
 
-body {
-    background:  $bg-color;
-}
+// body {
+//     background:  $bg-color;
+// }
 h1, h2, h3, h4, h5, h6{
     font-family: "Itim", cursive;
 }
@@ -45,8 +45,8 @@ p{
     .card {
         background: $white-color;
         width: 360px;
-        // height: 600px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
         button {
             width: 30px;
             height: 30px;
@@ -55,35 +55,42 @@ p{
             border: solid 1px lightgray;
         }
         img { 
-            width: 80%;
+            width: 60%;
             margin: auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
         }
         .footer-card {
-            row-gap: 14px;
+            row-gap: $gap +2;
             width: 100%;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
+            padding: $padding *2 +8;
+            @include df-fc;
             h4 {
-                color: blue;
+                color: $primary-color;
             }
             .quantity{
+                margin-top: 14px;
                 p {
-                    margin-top: 14px;
-                    padding: 8px;
+                    margin-top: 24px;
+                    padding: $padding -4;
                     border: none;
                     background: $white-color;
                     width: 100px;
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 8px;
+                    @include df-jcc-alc;
+                    border-radius: $border-radius /2 -4;
                 }
             }
         }
 
         .second {
-            background: #f1bbcb;
+            background: $bg-color;
         }
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
     }
 }
 .content{
@@ -92,45 +99,52 @@ p{
     @include df-jcb-alc;
     margin-top: 64px;
     .coupun{
-        padding: 24px;
-        h3, h4{
-            margin-top: 24px;
+        padding: $padding *2;
+        form{
+            @include df-fc;
+            label{
+                font-family: "Itim", cursive;
+                font-size: $font-size *2;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid;
+                margin-top: 50px;
+                outline: none;
+                
+            }
         }
-        h3{
-            border: solid 1px;
-            padding: 16px;
-        }
-        h4{
-            border: solid 1px;
-            padding: 12px;
+        button{
+            padding: $padding;
             width: 100px;
-            display: flex ;
-            justify-content: center;
+            @include df-jcc-alc;
             color: $white-color;
             background: $primary-color ;
             border: none;
+            margin-top: 50px;
         }
-    }
+    }    
     .total{
         margin-bottom: 48px;
         margin-right: 200px;
 
         h3{
             margin-top: 48px;
+            color: $primary-color;
         }
     }
 }
-.done{
+.done-button{
     button{
         margin-top: 48px;
         @include df-jcc-alc;
         margin: auto;
-        padding: 24px;
+        padding: $padding *2;
         border: none;
-        border-radius: 12px;
+        border-radius: $border-radius /2;
         background: $primary-color;
         color: $white-color;
-        font-size: $font-size *2;
+        font-size: $font-size + 4;
         font-family: "Itim", cursive;
     }
 }
