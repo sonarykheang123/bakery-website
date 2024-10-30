@@ -366,7 +366,6 @@ p {
 .value-container .value .content .left ul li, .value-container .value .content .right ul li {
   margin-top: 40px;
   border: none;
-  border-radius: 24px -8;
   padding: 8px;
   background: #FFF7EF;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
