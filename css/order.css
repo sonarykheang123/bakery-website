@@ -24,6 +24,17 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: 0.4s linear;
+>>>>>>> order-page
+=======
+  -webkit-transition: 0.4s linear;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
   transition: 0.4s linear;
 }
 nav ul.center-nav .active {
@@ -80,6 +91,17 @@ nav ul.center-nav li a {
   color: black;
   text-decoration: none;
   font-size: 20px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  -webkit-transition: 0.4s linear;
+>>>>>>> order-page
+=======
+  -webkit-transition: 0.4s linear;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
   transition: 0.4s linear;
 }
 nav ul.center-nav .active {
@@ -105,6 +127,7 @@ nav ul.logo-icon span {
   color: white;
 }
 
+<<<<<<< HEAD
 footer {
   background: #FFB6C1;
   margin-top: 72px;
@@ -159,6 +182,8 @@ body {
   background: #FFF7EF;
 }
 
+=======
+>>>>>>> order-page
 h1, h2, h3, h4, h5, h6 {
   font-family: "Itim", cursive;
 }
@@ -203,7 +228,25 @@ p {
 .group-cards .card {
   background: white;
   width: 360px;
+<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+=======
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+>>>>>>> order-page
+=======
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
 }
 .group-cards .card button {
   width: 30px;
@@ -213,31 +256,82 @@ p {
   border: solid 1px lightgray;
 }
 .group-cards .card img {
-  width: 80%;
+  width: 60%;
   margin: auto;
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.group-cards .card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .group-cards .card .footer-card {
   row-gap: 14px;
   width: 100%;
+<<<<<<< HEAD
   padding: 30px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> order-page
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
   display: flex;
   flex-direction: column;
 }
 .group-cards .card .footer-card h4 {
-  color: blue;
+  color: #FF6F61;
+}
+.group-cards .card .footer-card .quantity {
+  margin-top: 14px;
 }
 .group-cards .card .footer-card .quantity p {
-  margin-top: 14px;
-  padding: 8px;
+  margin-top: 24px;
+  padding: 12px -4;
   border: none;
   background: white;
   width: 100px;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
   border-radius: 8px;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px -4;
+>>>>>>> order-page
 }
 .group-cards .card .second {
-  background: #f1bbcb;
+  background: #FFF7EF;
+}
+.group-cards .card:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -251,22 +345,53 @@ p {
 .content .coupun {
   padding: 24px;
 }
-.content .coupun h3, .content .coupun h4 {
-  margin-top: 24px;
+.content .coupun form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.content .coupun h3 {
-  border: solid 1px;
-  padding: 16px;
+.content .coupun form label {
+  font-family: "Itim", cursive;
+  font-size: 24px;
 }
-.content .coupun h4 {
-  border: solid 1px;
+.content .coupun form input {
+  border: none;
+  border-bottom: 1px solid;
+  margin-top: 50px;
+  outline: none;
+}
+.content .coupun button {
   padding: 12px;
   width: 100px;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> order-page
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> e451f11536b1e99d4a74f15c9e5b28f6d94f7783
+>>>>>>> e5db7f3c7627eaf3e1b22277e78e44e9771e2ec6
   color: white;
   background: #FF6F61;
   border: none;
+  margin-top: 50px;
 }
 .content .total {
   margin-bottom: 48px;
@@ -274,9 +399,10 @@ p {
 }
 .content .total h3 {
   margin-top: 48px;
+  color: #FF6F61;
 }
 
-.done button {
+.done-button button {
   margin-top: 48px;
   display: flex;
   justify-content: center;
@@ -287,7 +413,7 @@ p {
   border-radius: 12px;
   background: #FF6F61;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Itim", cursive;
 }
 
