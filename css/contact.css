@@ -90,7 +90,7 @@ nav ul.logo-icon span {
   width: 40%;
 }
 .card .infor-card,
-.card .form-card {
+.card form {
   margin: 36px;
   margin-left: 100px;
 }
@@ -98,7 +98,7 @@ nav ul.logo-icon span {
   color: #FF6F61;
   font-size: 32px;
 }
-.card .contact-icon, .card .list {
+.card .contact-icon, .card .info {
   margin: 12px;
   gap: 8px;
 }
@@ -116,11 +116,12 @@ nav ul.logo-icon span {
   background-color: #FF6F61;
   padding: 8px;
   border-radius: 24px;
+  margin-right: 20px;
 }
 .card .infor-card p {
   margin-top: 16px;
 }
-.card .list {
+.card .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,17 +130,17 @@ nav ul.logo-icon span {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.card .list input {
+.card .info input {
   outline: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 120%;
+  width: 110%;
   height: 5vh;
   border: none;
   padding: 12px;
   border-radius: 14px;
 }
-.card .list1 input {
+.card .info1 input {
   height: 14vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,7 +592,7 @@ nav ul.logo-icon span {
   color: white;
 }
 
-.second_card {
+.second-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,9 +600,9 @@ nav ul.logo-icon span {
   margin-left: 200px;
   gap: 60px;
 }
-.second_card .main_card {
+.second-card .cust-card {
   width: 26%;
-  height: 50vh;
+  height: 55vh;
   text-align: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -611,46 +612,56 @@ nav ul.logo-icon span {
   transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
-.second_card .main_card img {
+.second-card .cust-card img {
   margin-top: 50px;
   width: 70px;
   border-radius: 48px;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
-.second_card .main_card .text1 {
-  margin: 12px;
+.second-card .cust-card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
-.second_card .main_card span {
+.second-card .cust-card .text1 {
+  margin-top: 28px;
+}
+.second-card .cust-card span, .second-card .cust-card p {
   font-size: 14px;
 }
-.second_card .main_card p {
-  font-size: 14px;
-}
-.second_card .main_card .star1 {
+.second-card .cust-card .star1 {
   color: orange;
+  margin-top: 12px;
 }
-.second_card .main_card .star1 span {
-  font-size: 18px;
+.second-card .cust-card .star1 span {
+  font-size: 20px;
 }
 
-.i1 i {
+.icon i {
   -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
   transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
 
-.i1 i:hover {
+.icon i:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.main_card:hover {
+.cust-card:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-contact:hover {
+  background: #FFB6C1;
 }
 
 .caption {
@@ -659,26 +670,30 @@ nav ul.logo-icon span {
   margin-left: 132px;
 }
 
+h1 {
+  font-family: "Itim", cursive;
+}
+
 .bg-img {
-  background-image: url(../image/contact/Background.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
   background-position: center;
   background-size: cover;
   height: 80vh;
 }
 .bg-img .text {
-  width: 90%;
-  margin: auto;
+  width: 80%;
   position: relative;
-  top: 30%;
-  left: 32px;
+  top: 20%;
+  left: 80px;
 }
 .bg-img .text h1 {
   font-size: 48px;
 }
 .bg-img .text h1, .bg-img .text p {
-  color: #FF6F61;
+  color: #FFB6C1;
 }
 .bg-img .text p {
+  margin: 6px;
   width: 45%;
   font-size: 18px;
 }
@@ -709,15 +724,11 @@ nav ul.logo-icon span {
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
   font-size: 14px;
   margin-top: 10px;
 }
 
 .btn {
-  margin-left: 100px;
-}
-
-h1 {
-  font-family: "Itim", cursive;
+  margin-left: 80px;
 }

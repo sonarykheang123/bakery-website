@@ -16,7 +16,7 @@
         width: 40%;
     }
     .infor-card,
-    .form-card{
+    form{
         margin:$margin*3;
         margin-left: 100px;
     }
@@ -25,8 +25,8 @@
         font-size: $font-size + 20px;
         
     }
-    .contact-icon, .list{
-        margin: $margin;
+    .contact-icon, .info{
+        margin: $margin ;
         gap: $gap - 4px;
     }
     .contact-icon{
@@ -38,29 +38,29 @@
         background-color: $primary-color;
         padding: $padding - 4;
         border-radius: $border-radius;
+        margin-right: 20px;
     }
     .infor-card p{
         margin-top: $margin + 4;
     }
-    .list{
+    .info{
         @include df-fc;
         input{
             outline: none;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-            width: 120%;
+            width: 110%;
             height: 5vh;
             border: none;
             padding: $padding;
             border-radius: $border-radius - 10px;
         }
     }
-    .list1{
+    .info1{
         input{
             height: 14vh;
             @include df;
             border-radius: $border-radius - 12;
-        }
-       
+        }    
     }   
 }
 //home-page
