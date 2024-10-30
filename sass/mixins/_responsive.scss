@@ -1,0 +1,9 @@
+@import './groupmixin';
+@import '../components/variable';
+
+// responsive teblet
+@media only screen and (min-width:426px) and (max-width:834px){
+    body{
+        background: green;
+    }
+}
