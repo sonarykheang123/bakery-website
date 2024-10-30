@@ -1,0 +1,55 @@
+@import './variable';
+@import '../mixins/groupmixin';
+
+footer{
+    background: $third-color;
+    margin-top: $margin * 6;
+    padding: $padding * 3;
+    flex: 1.5;
+    .foot{
+        width: 95%;
+        margin: auto;
+        @include df-jcb-alc;
+        .info-footer{
+            margin-bottom: $margin * 4;
+            img{
+                margin: $margin $margin * 0;
+                width: 120px;
+                margin-left: $margin * 7;
+                
+            }
+            p{
+                width: 70%;
+                text-align: center;
+            }
+        }
+        .follow-footer{
+            .icon-img{
+                @include df-alc;
+                gap: $gap;
+                margin: $margin $margin * 0;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        .our-store{
+            .icon-page{
+                @include df-alc;
+                gap: $gap;
+                margin: $margin - 3 $margin * 0;
+                span.material-symbols-outlined{
+                    font-size: $font-size * 2 + 2px;
+                }
+                
+            }
+        }
+        .get-toch{
+            .icon-page{
+                @include df-alc;
+                gap: $gap;
+                margin: $margin + 6 $margin * 0;
+            }
+        }
+    }
+}
