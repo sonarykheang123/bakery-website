@@ -1,56 +1,59 @@
 @import "./variable";
 @import "../mixins/groupmixin";
 
-.second_card{
+.second-card{
     @include df;
     width: 80%;
     margin-left: 200px;
     gap: $gap  * 5;
-    .main_card{
+    .cust-card{
     width: 26%;
-    height: 50vh;
+    height: 55vh;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-top: $margin * 5;
     transition: transform 0.3s, box-shadow 0.3s;
-
     img{
         margin-top: 50px;
         width: 70px;
         border-radius: $border-radius + 24;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    img:hover{
+        transform: scale(1.05);
     }
     .text1{
-        margin: $margin;
+        margin-top: $margin + 16;
     }
-    span{
-        font-size: $font-size + 2;
-    }
-    p{
+    span,p{
         font-size: $font-size + 2;
     }
     .star1{
-        color: orange;  
+        color: orange;
+        margin-top: $margin; 
     }
     .star1 span{
-        font-size: $font-size + 6;
-    }
-     
+        font-size: $font-size + 8;
+    }  
 }
 }
-.i1 i{
+
+    .icon i{
     transition: transform 0.3s, box-shadow 0.3s;
-}
-.i1 i:hover{
+    }
+    .icon i:hover{
     transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
-}
-.main_card:hover{
+    }
+    .cust-card:hover{
     transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.caption{
+    }
+   .btn-contact:hover{
+    background: $third-color;
+    }
+    .caption{
     color: $primary-color;
     margin: {
         top: $margin *5;

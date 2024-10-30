@@ -8,34 +8,32 @@
 
 
 
+h1{
+    font-family: "Itim", cursive;
+}
 .bg-img{
-    background-image: url(../image/contact/Background.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
     @include bg-img;
     height: 80vh;
     .text{
-        width: 90%;
-        margin: auto;
+        width: 80%;
         position: relative;
-        top: 30%;
-        left:32px;
+        top: 20%;
+        left:80px;
         h1{
-            font-size: $font-size *4;
+            font-size: $font-size * 4;
         }
         h1, p{
-            color: $primary-color;
+            color: $third-color;
         }
         p{
-            width: 45%;
+            margin: $margin - 6;
+            width: 45% ;
             font-size: $font-size + 6;
-        }
-        
-    }
-    
-    
+        }  
+    }  
 }
-
-
-.media {
+    .media {
       gap: 60px;
       display: flex;
       margin-top: 30px;
@@ -45,23 +43,17 @@
         background-color: $primary-color;
         padding: $padding + 4;
         border-radius: $border-radius;
+    }  
     }
-    
-    
-}
-.btn-contact{
+    .btn-contact{
     @include button;
-    padding: $padding - 4;
+    padding: $padding - 2;
     font-size: $font-size + 2;
-    margin-top: 10px;
-    
-}
-.btn{
-    margin-left: 100px;
-}
-h1{
-    font-family: "Itim", cursive;
-}
+    margin-top: 10px; 
+    }
+    .btn{
+    margin-left: 80px;
+    }
 
 
 
