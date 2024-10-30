@@ -38,19 +38,17 @@ p{
         }
     }
 }
-//content
-
 .card-container {
     @include df-fw;
     width: 90%;
     margin: auto;
-    column-gap: 20px;
+    column-gap: $gap +8;
     .card {
         margin-top: 80px;
-        padding: 60px;
+        padding: $padding *5;
         width: 49%;
         height: 557px;
-        border-radius: 24px;
+        border-radius: $border-radius;
         background: $white-color;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         h2 {
@@ -107,11 +105,11 @@ p{
     margin: auto;
     background: $white-color;
     border: none;
-    border-radius: 24px;
+    border-radius: $border-radius;
     margin-top: 80px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     .value{
-        padding: 60px;
+        padding: $padding *5;
         text-align: center;
         .head{
             h2{
@@ -134,7 +132,7 @@ p{
                     li{
                         margin-top: 40px;
                         border: none;
-                        border-radius: 16px;
+                        border-radius: $border-radius -8;
                         padding: $padding - 4;
                         background: $bg-color;
                         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -172,7 +170,7 @@ p{
             width: 200px;
             height: 150px;
             border: none;
-            border-radius: 24px;
+            border-radius: $border-radius;
             background: $white-color;
             padding: $padding;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -208,7 +206,10 @@ p{
                 border: none;
                 border-radius: 100%;
                 object-fit: cover;
-        
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            img:hover{
+                transform: scale(1.05);
             }
             p{
                 margin-top: 56px;
