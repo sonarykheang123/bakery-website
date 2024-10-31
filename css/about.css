@@ -301,10 +301,11 @@ p {
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
   cursor: pointer;
+  border: solid 1px #FF6F61;
   margin-top: 50px;
 }
 .card-container .card button:hover {
-  border: 2px solid;
+  border: 1px solid #FF6F61;
   background: none;
   color: #FF6F61;
 }
@@ -331,7 +332,6 @@ p {
   width: 90%;
   margin: auto;
   background: white;
-  border: none;
   border-radius: 24px;
   margin-top: 80px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

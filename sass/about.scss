@@ -80,10 +80,11 @@ p{
         }
         button {
             @include button;
+            border: solid 1px $primary-color;
             margin-top: 50px;
         }
         button:hover{
-            border: 2px solid;
+            border: 1px solid $primary-color;
             background: none;
             color: $primary-color;
         }
@@ -107,7 +108,6 @@ p{
     width: 90%;
     margin: auto;
     background: $white-color;
-    border: none;
     border-radius: $border-radius;
     margin-top: 80px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -133,7 +133,7 @@ p{
                 text-align: start;
                 ul{
                     li{
-                        margin-top: 40px;
+                        margin-top: $margin *4 - 8;
                         border: none;
                         border-radius: $border-radius - 8;
                         padding: $padding - 4;
@@ -158,7 +158,7 @@ p{
     width: 90%;
     margin: auto;
     text-align: center;
-    margin-top: 80px;
+    margin-top: $margin *7 - 4;
     h2{
         color: $primary-color;
         font-size: $font-size + 20;
@@ -166,7 +166,7 @@ p{
     .group-card{
         @include df-jcc-alc;
         column-gap: $gap + 8;
-        margin-top: 64px;
+        margin-top: $margin *5 + 4;
         .card{
             text-align: center;
             align-content: center;
