@@ -367,6 +367,7 @@ p {
 .value-container .value .content .left ul li, .value-container .value .content .right ul li {
   margin-top: 40px;
   border: none;
+  border-radius: 16px;
   padding: 8px;
   background: #FFF7EF;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -428,6 +429,12 @@ p {
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.service .group-card .card .fa-phone, .service .group-card .card .fa-shop, .service .group-card .card .fa-envelope {
+  font-size: 24px;
+}
+.service .group-card .card .fa-square-whatsapp {
+  font-size: 30px;
 }
 .service .group-card .card p {
   width: 80%;

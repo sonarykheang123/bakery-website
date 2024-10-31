@@ -42,7 +42,7 @@ p{
     @include df-fw;
     width: 90%;
     margin: auto;
-    column-gap: $gap +8;
+    column-gap: $gap + 8;
     .card {
         margin-top: 80px;
         padding: $padding *5;
@@ -135,6 +135,7 @@ p{
                     li{
                         margin-top: 40px;
                         border: none;
+                        border-radius: $border-radius - 8;
                         padding: $padding - 4;
                         background: $bg-color;
                         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -177,6 +178,12 @@ p{
             padding: $padding;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            .fa-phone, .fa-shop, .fa-envelope{
+                font-size: $font-size *2;
+            }
+            .fa-square-whatsapp{
+                font-size: $font-size *2 + 6;
+            }
             p{
                 width: 80%;
                 margin: auto;
@@ -214,10 +221,6 @@ p{
                 transform: scale(1.05);
             }
             p{
-// <<<<<<< HEAD
-// =======
-
-// >>>>>>> order-page
                 margin-top: 56px;
                 font-size: $font-size + 12;
                 transition: background-color 0.3s ease, transform 0.3s ease;
