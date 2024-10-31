@@ -2,8 +2,87 @@
 @import '../components/variable';
 
 // responsive teblet
-@media only screen and (min-width:426px) and (max-width:834px){
-    body{
-        background: green;
+@media (min-width: 768px ) and (max-width:1024px) {
+    .body-container{
+        .card-pop{
+            width: 500px;
+            height: 280px;
+            img{
+                width: 200px;
+                height: 280px;
+            }
+            .body-card-pop{
+                h4{
+                    font-size: $font-size + 6px;
+                }
+                .star{
+                    span{
+                        font-size: $font-size + 4px;
+                    }
+                }
+            }
+        }
+        .set-day{
+            .cards-set{
+                .card-set{
+                    .body-card-set{
+                        h2{
+                            font-size: $font-size * 2 + 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .top-product{
+            .cards-top{
+                .card-top{
+                    width: 270px;
+                    img{
+                        width: 270px;
+                    }
+                }
+                .card-top:nth-child(4){
+                    display: none;
+                }
+            }
+        }
+        .menu-product{
+            .cards-menu{
+                .card-menu{
+                    width: 270px;
+                    img:nth-child(2){
+                        width: 100px;
+                    }
+                }
+                .card-menu:nth-child(4){
+                    display: none;
+                }
+            }
+        }
+        .customize{
+            .customer-info{
+                position: relative;
+                right: 5%;
+                img{
+                    position: relative;
+                    right: 20%;
+                }
+            }
+        }
     }
 }
+
+//responsive on mobile phone
+@media (min-width:320px) and (max-width:767px) {
+    .body-container{
+        width: 70%;
+        margin: auto;
+        background: #000;
+        .popular-card{
+            h2{
+                font-size: 12px;
+            }
+        }
+    }
+}
+   

@@ -49,6 +49,61 @@ nav ul.logo-icon span {
   color: white;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body-container .card-pop {
+    width: 500px;
+    height: 280px;
+  }
+  .body-container .card-pop img {
+    width: 200px;
+    height: 280px;
+  }
+  .body-container .card-pop .body-card-pop h4 {
+    font-size: 18px;
+  }
+  .body-container .card-pop .body-card-pop .star span {
+    font-size: 16px;
+  }
+  .body-container .set-day .cards-set .card-set .body-card-set h2 {
+    font-size: 28px;
+  }
+  .body-container .top-product .cards-top .card-top {
+    width: 270px;
+  }
+  .body-container .top-product .cards-top .card-top img {
+    width: 270px;
+  }
+  .body-container .top-product .cards-top .card-top:nth-child(4) {
+    display: none;
+  }
+  .body-container .menu-product .cards-menu .card-menu {
+    width: 270px;
+  }
+  .body-container .menu-product .cards-menu .card-menu img:nth-child(2) {
+    width: 100px;
+  }
+  .body-container .menu-product .cards-menu .card-menu:nth-child(4) {
+    display: none;
+  }
+  .body-container .customize .customer-info {
+    position: relative;
+    right: 5%;
+  }
+  .body-container .customize .customer-info img {
+    position: relative;
+    right: 20%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .body-container {
+    width: 70%;
+    margin: auto;
+    background: #000;
+  }
+  .body-container .popular-card h2 {
+    font-size: 12px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +136,12 @@ footer .foot .info-footer img {
 footer .foot .info-footer p {
   width: 70%;
   text-align: center;
+}
+footer .foot .foot-contact {
+  display: flex;
+}
+footer .foot .follow-footer {
+  margin: 0px 72px;
 }
 footer .foot .follow-footer .icon-img {
   display: flex;
