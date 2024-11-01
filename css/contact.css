@@ -94,16 +94,6 @@ nav ul.logo-icon span {
     right: 20%;
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .body-container {
-    width: 70%;
-    margin: auto;
-    background: #000;
-  }
-  .body-container .popular-card h2 {
-    font-size: 12px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
