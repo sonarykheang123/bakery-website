@@ -63,9 +63,10 @@ p{
             transform: scale(1.05);
         }
         .footer-card {
-            row-gap: $gap +2;
+            row-gap: $gap + 
+            2;
             width: 100%;
-            padding: $padding *2 +8;
+            padding: $padding *2 + 8;
             @include df-fc;
             h4 {
                 color: $primary-color;
@@ -143,4 +144,32 @@ button:hover{
 }
 .footer{
     margin-top: $margin *4;
+}
+
+//Responsive on tablet
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .banner{
+        height: 50vh;
+        h1{
+            font-size: $font-size *3;
+        }
+    }
+    .order-form{
+        font-size: $font-size *3;
+    }
+    .group-cards {
+        .card {
+            img {
+                width: 90%;
+            }
+        }
+    }
+    .content .total{
+        margin-right: 50px;
+    }
+}
+
+// responsive on mobile phone
+@media only screen and (min-width:320px) and (max-width: 767px){
+
 }

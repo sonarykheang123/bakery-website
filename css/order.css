@@ -417,3 +417,21 @@ button:hover {
 .footer {
   margin-top: 48px;
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 50vh;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+  .order-form {
+    font-size: 36px;
+  }
+  .group-cards .card img {
+    width: 90%;
+  }
+  .content .total {
+    margin-right: 50px;
+  }
+}
