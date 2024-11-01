@@ -94,6 +94,147 @@ nav ul.logo-icon span {
     right: 20%;
   }
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  body header {
+    height: 50vh;
+  }
+  body header .head-container h1 {
+    font-size: 24px;
+  }
+  body header .head-container button {
+    width: 120px;
+    padding: 6px;
+    font-size: 12px;
+  }
+  body .body-container .popular-card h2 {
+    font-size: 24px;
+  }
+  body .body-container .popular-card .cards-pop {
+    display: flex;
+    flex-direction: column;
+  }
+  body .body-container .popular-card .cards-pop .card-pop {
+    width: 350px;
+    height: 200px;
+  }
+  body .body-container .popular-card .cards-pop .card-pop img {
+    width: 175px;
+    height: 200px;
+  }
+  body .body-container .popular-card .cards-pop .card-pop .body-card-pop .star span {
+    font-size: 16px;
+  }
+  body .body-container .popular-card .cards-pop .card-pop .body-card-pop button {
+    width: 80px;
+    padding: 4px;
+    font-size: 12px;
+  }
+  body .body-container .set-day h1 {
+    font-size: 24px;
+  }
+  body .body-container .set-day .cards-set .card-set {
+    width: 350px;
+    height: 200px;
+  }
+  body .body-container .set-day .cards-set .card-set img {
+    width: 175px;
+    height: 200px;
+  }
+  body .body-container .set-day .cards-set .card-set .body-card-set {
+    width: 90%;
+    margin: auto;
+    margin-left: 24px;
+  }
+  body .body-container .set-day .cards-set .card-set .body-card-set h2 {
+    font-size: 16px;
+  }
+  body .body-container .set-day .cards-set .card-set .body-card-set p {
+    font-size: 8px;
+  }
+  body .body-container .set-day .cards-set .card-set .body-card-set p:nth-child(3) {
+    font-size: 12px;
+  }
+  body .body-container .set-day .cards-set .card-set .body-card-set button {
+    width: 80px;
+    padding: 4px;
+    font-size: 10px;
+  }
+  body .body-container .set-day .cards-set .card-set:nth-child(2) .body-card-set {
+    margin-left: 24px;
+  }
+  body .body-container .set-day .cards-set .card-set:nth-child(2) .body-card-set h2 {
+    font-size: 14px;
+    width: 100%;
+  }
+  body .body-container .set-day .cards-set .card-set:nth-child(2) .body-card-set p {
+    font-size: 8px;
+    width: 100%;
+  }
+  body .body-container .set-day .cards-set .card-set:nth-child(2) .body-card-set p:nth-child(3) {
+    font-size: 12px;
+  }
+  body .body-container .set-day .cards-set .card-set:nth-child(2) .body-card-set button {
+    width: 80px;
+    padding: 4px;
+    font-size: 10px;
+  }
+  body .body-container .top-product h1 {
+    font-size: 24px;
+  }
+  body .body-container .top-product .cards-top .card-top {
+    width: 175px;
+    height: 250px;
+  }
+  body .body-container .top-product .cards-top .card-top img {
+    width: 175px;
+    height: 150px;
+  }
+  body .body-container .top-product .cards-top .card-top .body-card h4 {
+    font-size: 12px;
+  }
+  body .body-container .top-product .cards-top .card-top .body-card .star span {
+    font-size: 12px;
+  }
+  body .body-container .top-product .cards-top .card-top .body-card .footer-card button {
+    width: 80px;
+    padding: 6px;
+    font-size: 8px;
+  }
+  body .body-container .top-product .cards-top .card-top:nth-child(3) {
+    display: none;
+  }
+  body .body-container .top-product .cards-top .card-top:nth-child(4) {
+    display: none;
+  }
+  body .body-container .menu-product h2 {
+    font-size: 16px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu {
+    width: 175px;
+    height: 250px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu img {
+    width: 100px;
+    height: 100px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu img:nth-child(2) {
+    margin-right: 48px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu .body-card h4 {
+    font-size: 14px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu .body-card button {
+    width: 50px;
+    padding: 6px;
+    font-size: 8px;
+  }
+  body .body-container .menu-product .cards-menu .card-menu:nth-child(3) {
+    display: none;
+  }
+  body .body-container .menu-product .cards-menu .card-menu:nth-child(4) {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -439,4 +580,4 @@ p {
 .baker .baker-img .img p:hover {
   transform: translateY(-8px);
   font-weight: bold;
-}
+}/*# sourceMappingURL=about.css.map */

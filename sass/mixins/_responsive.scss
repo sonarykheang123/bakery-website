@@ -74,6 +74,178 @@
 
 //responsive on mobile phone
 @media (min-width:320px) and (max-width:767px) {
-    
+    body{
+        header{
+            height: 50vh;
+            .head-container{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                button{
+                    width: 120px;
+                    padding: $padding - 6px;
+                    font-size: $font-size;
+                }
+            }
+        }
+        .body-container{
+            .popular-card{
+                h2{
+                    font-size: $font-size * 2;
+                }
+                .cards-pop{
+                    @include df-fc;
+                    .card-pop{
+                        width: 350px;
+                        height: 200px;
+                        img{
+                            width: 175px;
+                            height: 200px;
+                        }
+                        .body-card-pop{
+                            .star{
+                                span{
+                                    font-size: $font-size + 4px;
+                                }
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size;
+                            }
+                        }
+                    }
+                }
+            }
+            .set-day{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                .cards-set{
+                    .card-set{
+                        width: 350px;
+                        height: 200px;
+                        img{
+                            width: 175px;
+                            height: 200px;
+                        }
+                        .body-card-set{
+                            width: 90%;
+                            margin: auto;
+                            margin-left: $margin * 2;
+                            h2{
+                                font-size: $font-size + 4px;
+                            }
+                            p{
+                                font-size: $font-size - 4px;
+                            }
+                            p:nth-child(3){
+                                font-size: $font-size;
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size - 2px;
+                            }
+                        }
+                    }
+                    .card-set:nth-child(2){
+                        .body-card-set{
+                            margin-left: $margin * 2;
+                            h2{
+                                font-size: $font-size + 2px;
+                                width: 100%;
+                            }
+                            p{
+                                font-size: $font-size - 4px;
+                                width: 100%;
+                            }
+                            p:nth-child(3){
+                                font-size: $font-size;
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size - 2px;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .top-product{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                .cards-top{
+                    .card-top{
+                        width: 175px;
+                        height: 250px;
+                        img{
+                            width: 175px;
+                            height: 150px;
+                        }
+                        .body-card{
+                            h4{
+                                font-size: $font-size;
+                            }
+                            .star{
+                                span{
+                                    font-size: $font-size;
+                                }
+                            }
+                            .footer-card{
+                                button{
+                                    width: 80px;
+                                    padding: $padding - 6px;
+                                    font-size: $font-size - 4px
+                                }
+                            }
+                        }
+                    }
+                    .card-top:nth-child(3){
+                        display: none;
+                    }
+                    .card-top:nth-child(4){
+                        display: none;
+                    }
+                }
+            }
+            .menu-product{
+                h2{
+                    font-size: $font-size + 4px;
+                }
+                .cards-menu{
+                    .card-menu{
+                        width: 175px;
+                        height: 250px;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                        img:nth-child(2){
+                            margin-right: $margin * 4;
+                        }
+                        .body-card{
+                            h4{
+                                font-size: $font-size + 2px;
+                            }
+                            button{
+                                width: 50px;
+                                    padding: $padding - 6px;
+                                    font-size: $font-size - 4px;
+                            }
+                        }
+                    }
+                    .card-menu:nth-child(3){
+                        display: none;
+                    }
+                    .card-menu:nth-child(4){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
    
