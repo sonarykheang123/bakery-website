@@ -602,7 +602,7 @@ nav ul.logo-icon span {
 }
 .second-card .cust-card {
   width: 26%;
-  height: 55vh;
+  height: 60vh;
   text-align: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -611,6 +611,7 @@ nav ul.logo-icon span {
   transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  margin-left: 18px;
 }
 .second-card .cust-card img {
   margin-top: 50px;
@@ -628,7 +629,8 @@ nav ul.logo-icon span {
 .second-card .cust-card .text1 {
   margin-top: 28px;
 }
-.second-card .cust-card span, .second-card .cust-card p {
+.second-card .cust-card span,
+.second-card .cust-card p {
   font-size: 14px;
 }
 .second-card .cust-card .star1 {
@@ -645,7 +647,6 @@ nav ul.logo-icon span {
   transition: transform 0.3s, box-shadow 0.3s;
   transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
 }
-
 .icon i:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
@@ -670,6 +671,189 @@ nav ul.logo-icon span {
   margin-left: 132px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .img-logo img {
+    max-width: 80px;
+  }
+  .bg-img .text h1 {
+    font-size: 24px;
+  }
+  .bg-img p {
+    font-size: 4px;
+  }
+  .center-nav,
+  .logo-icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .center-nav span,
+  .logo-icon span {
+    display: none;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .card .infor-card {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .card .infor-card h1 {
+    font-size: 20px;
+  }
+  .card form {
+    width: 90%;
+    margin-right: 120px;
+  }
+  .card form h1 {
+    font-size: 20px;
+  }
+  .card .contact-icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .icon {
+    gap: 20px;
+  }
+  .card .btn-contact {
+    width: 75%;
+    margin-left: 40px;
+  }
+  .caption {
+    margin-top: 48px;
+    margin-left: 48px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  .second-card .cust-card {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  .second-card .cust-card .text1 {
+    padding: 10px;
+    margin-top: 14px;
+  }
+  .second-card .cust-card .text1 p,
+  .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+}
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .card .infor-card {
+    width: 60%;
+    margin: 0 auto 100px auto;
+  }
+  .card .info {
+    margin-left: 5%;
+  }
+  .card .info input {
+    width: 90%;
+  }
+  .card .icon {
+    gap: 30%;
+  }
+  .card form h1 {
+    margin-left: 5%;
+  }
+  .card form .btn {
+    margin-left: 30%;
+  }
+  .caption {
+    margin-top: 60px;
+    margin-left: 96px;
+  }
+  .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    width: 85%;
+    margin-left: 90px;
+  }
+  .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  .second-card .cust-card {
+    width: 25%;
+    height: auto;
+  }
+  .second-card .cust-card .text1 {
+    padding: 8px;
+    margin-top: 14px;
+  }
+  .second-card .cust-card .text1 p,
+  .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+  footer .foot {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: left;
+  }
+}
 h1 {
   font-family: "Itim", cursive;
 }
