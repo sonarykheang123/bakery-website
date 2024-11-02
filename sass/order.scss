@@ -3,6 +3,8 @@
 @import './components/footer';
 @import './components/variable';
 @import './mixins/groupmixin';
+@import "./mixins/respondsive-contact";
+@import "./mixins/responsive-footer";
 
 // body {
 //     background:  $bg-color;
@@ -63,9 +65,9 @@ p{
             transform: scale(1.05);
         }
         .footer-card {
-            row-gap: $gap +2;
+            row-gap: $gap + 2;
             width: 100%;
-            padding: $padding *2 +8;
+            padding: $padding *2 + 8;
             @include df-fc;
             h4 {
                 color: $primary-color;
@@ -79,7 +81,7 @@ p{
                     background: $white-color;
                     width: 100px;
                     @include df-jcc-alc;
-                    border-radius: $border-radius /2 -4;
+                    border-radius: $border-radius  - 16;
                 }
             }
         }
