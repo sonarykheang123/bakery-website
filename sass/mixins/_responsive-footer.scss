@@ -45,3 +45,42 @@
         }
     }
 }
+
+//for mobile 
+@media (min-width:320px) and (max-width:767px){
+    body{
+        footer{
+            .foot{
+                @include df-fc;
+                .info-footer{
+                    img{
+                        width: 80px;
+                        position: relative;
+                        left: 14%;
+                    }
+                    p{
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
+                .foot-contact{
+                  margin-right: 90px;
+                  .follow-footer, .our-store{
+                    h2{
+                        font-size: $font-size + 6px;
+                    }
+                    span:nth-child(2){
+                        font-size: $font-size + 2px;
+                    }
+                  }
+                 
+                }
+                .get-toch{
+                    h2{
+                        font-size: $font-size + 6px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,69 +3,350 @@
 
 // responsive teblet
 @media (min-width: 768px ) and (max-width:1024px) {
-    .body-container{
-        .card-pop{
-            width: 500px;
-            height: 280px;
-            img{
-                width: 200px;
-                height: 280px;
-            }
-            .body-card-pop{
-                h4{
-                    font-size: $font-size + 6px;
-                }
-                .star{
-                    span{
-                        font-size: $font-size + 4px;
-                    }
-                }
-            }
+    body{
+        header{
+            height: 50vh;
         }
-        .set-day{
-            .cards-set{
-                .card-set{
-                    .body-card-set{
-                        h2{
-                            font-size: $font-size * 2 + 4px;
+        .body-container{
+            .card-pop{
+                width: 500px;
+                height: 280px;
+                img{
+                    width: 200px;
+                    height: 280px;
+                }
+                .body-card-pop{
+                    h4{
+                        font-size: $font-size + 6px;
+                    }
+                    .star{
+                        span{
+                            font-size: $font-size + 4px;
                         }
                     }
                 }
             }
-        }
-        .top-product{
-            .cards-top{
-                .card-top{
-                    width: 270px;
-                    img{
-                        width: 270px;
+            .set-day{
+                .cards-set{
+                    .card-set{
+                        .body-card-set{
+                            h2{
+                                font-size: $font-size * 2 + 4px;
+                            }
+                        }
                     }
                 }
-                .card-top:nth-child(4){
-                    display: none;
-                }
             }
-        }
-        .menu-product{
-            .cards-menu{
-                .card-menu{
-                    width: 270px;
-                    img:nth-child(2){
-                        width: 100px;
+            .top-product{
+                .cards-top{
+                    .card-top{
+                        width: 260px;
+                        img{
+                            width: 260px;
+                        }
+                    }
+                    .card-top:nth-child(4){
+                        display: none;
                     }
                 }
-                .card-menu:nth-child(4){
-                    display: none;
+            }
+            .menu-product{
+                .cards-menu{
+                    .card-menu{
+                        width: 260px;
+                        img:nth-child(2){
+                            width: 100px;
+                        }
+                    }
+                    .card-menu:nth-child(4){
+                        display: none;
+                    }
                 }
             }
-        }
-        .customize{
-            .customer-info{
-                position: relative;
-                right: 5%;
-                img{
+            .info-product{
+                .info-product-left, .info-product-right{
+                    height: 40vh;
+                    h2{
+                        font-size: $font-size + 8px;
+                    }
+                    p:nth-child(2){
+                        width: 60%;
+                        font-size: $font-size + 4px;
+                    }
+                }
+            }
+            .customize{
+                .customer-info{
                     position: relative;
-                    right: 20%;
+                    right: 5%;
+                    img{
+                        position: relative;
+                        right: 20%;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+//responsive on mobile phone
+@media (min-width:320px) and (max-width:767px) {
+    body{
+        header{
+            height: 50vh;
+            .head-container{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                button{
+                    width: 120px;
+                    padding: $padding - 6px;
+                    font-size: $font-size;
+                }
+            }
+        }
+        .body-container{
+            .popular-card{
+                h2{
+                    font-size: $font-size * 2;
+                }
+                .cards-pop{
+                    @include df-fc;
+                    .card-pop{
+                        width: 350px;
+                        height: 200px;
+                        img{
+                            width: 175px;
+                            height: 200px;
+                        }
+                        .body-card-pop{
+                            .star{
+                                span{
+                                    font-size: $font-size + 4px;
+                                }
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size;
+                            }
+                        }
+                    }
+                }
+            }
+            .set-day{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                .cards-set{
+                    .card-set{
+                        width: 350px;
+                        height: 200px;
+                        img{
+                            width: 175px;
+                            height: 200px;
+                        }
+                        .body-card-set{
+                            width: 90%;
+                            margin: auto;
+                            margin-left: $margin * 2;
+                            h2{
+                                font-size: $font-size + 4px;
+                            }
+                            p{
+                                font-size: $font-size - 4px;
+                            }
+                            p:nth-child(3){
+                                font-size: $font-size;
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size - 2px;
+                            }
+                        }
+                    }
+                    .card-set:nth-child(2){
+                        .body-card-set{
+                            margin-left: $margin * 2;
+                            h2{
+                                font-size: $font-size + 2px;
+                                width: 100%;
+                            }
+                            p{
+                                font-size: $font-size - 4px;
+                                width: 100%;
+                            }
+                            p:nth-child(3){
+                                font-size: $font-size;
+                            }
+                            button{
+                                width: 80px;
+                                padding: $padding - 8px;
+                                font-size: $font-size - 2px;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .top-product{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                .cards-top{
+                    .card-top{
+                        width: 175px;
+                        height: 250px;
+                        img{
+                            width: 175px;
+                            height: 150px;
+                        }
+                        .body-card{
+                            h4{
+                                font-size: $font-size;
+                            }
+                            .star{
+                                margin-top: $margin - 10px;
+                                span{
+                                    font-size: $font-size - 2px;
+                                }
+                            }
+                            .footer-card{
+                                p{
+                                    font-size: $font-size;
+                                }
+                                button{
+                                    width: 50px;
+                                    padding: $padding - 8px;
+                                    font-size: $font-size - 4px
+                                }
+                            }
+                        }
+                    }
+                    .card-top:nth-child(3){
+                        display: none;
+                    }
+                    .card-top:nth-child(4){
+                        display: none;
+                    }
+                }
+            }
+            .menu-product{
+                h2{
+                    font-size: $font-size + 4px;
+                }
+                .cards-menu{
+                    .card-menu{
+                        width: 175px;
+                        height: 250px;
+                        img{
+                            width: 100px;
+                            height: 80px;
+                        }
+                        img:nth-child(2){
+                            margin-right: $margin * 4;
+                        }
+                        .body-card{
+                            h4{
+                                font-size: $font-size;
+                            }
+                            .star{
+                                span{
+                                    font-size: $font-size;
+                                }
+                            }
+                            button{
+                                width: 50px;
+                                    padding: $padding - 6px;
+                                    font-size: $font-size - 4px;
+                            }
+                        }
+                    }
+                    .card-menu:nth-child(3){
+                        display: none;
+                    }
+                    .card-menu:nth-child(4){
+                        display: none;
+                    }
+                }
+                .card-menus{
+                    .card-menu{
+                        img{
+                            width: 100px;
+                            position: relative;
+                            right: 20%;
+                        }
+                    }
+                }
+                .card-menus-two{
+                    .card-menu{
+                        img{
+                            width: 60px;
+                            position: relative;
+                            right: 15%;
+                        }
+                    }
+                }
+            }
+            .info-product{
+                margin: $margin * 4 $margin * 0;
+                @include df-fc;
+                .info-product-left{
+                    width: 100%;
+                    height: 350px;
+                    h1{
+                        font-size: $font-size + 8px;
+                    }
+                    p{
+                        font-size: $font-size
+                    }
+                    button{
+                        width: 80px;
+                        padding: $padding - 8px;
+                        font-size: $font-size - 2px;
+                    }
+                }
+                .info-product-right{
+                    margin-top: $margin * 3;
+                    width: 100%;
+                    height: 350px;
+                    h1{
+                        font-size: $font-size + 8px;
+                    }
+                    p{
+                        font-size: $font-size
+                    }
+                    button{
+                        width: 80px;
+                        padding: $padding - 8px;
+                        font-size: $font-size - 2px;
+                    }
+                }
+            }
+            .promotion{
+                img{
+                    margin: $margin * 0 $margin * 0;
+                }
+            }
+            .customize{
+                h1{
+                    font-size: $font-size * 2;
+                }
+                .customer-info{
+                    @include df-fc;
+                    .cus-info{
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                        h3{
+                            font-size: $font-size + 6px;
+                        }
+                        p{
+                            font-size: $font-size;
+                        }
+                    }
                 }
             }
         }
