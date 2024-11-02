@@ -23,7 +23,11 @@ footer{
                 text-align: center;
             }
         }
+        .foot-contact{
+            @include df;
+        }
         .follow-footer{
+        margin: $margin * 0 $margin * 6;
             .icon-img{
                 @include df-alc;
                 gap: $gap;

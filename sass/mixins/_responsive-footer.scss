@@ -1,0 +1,86 @@
+@import './groupmixin';
+@import '../components/variable'; 
+
+@media (min-width: 768px ) and (max-width:1024px) {
+    .foot{
+        .foot-contact{
+            margin-bottom: $margin;
+            @include df-fc;
+            align-items: center;
+            margin: $margin * 0 $margin * 4;
+            .follow-footer{
+                margin: $margin $margin * 4;
+                .icons-img{
+                    @include df;
+                    text-align: center;
+                    gap: $gap;
+                    margin-top: $margin;
+                    .icon-img{
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .our-store{
+                .icons-page{
+                    @include df;
+                    margin-top: $margin;
+                    gap: $gap;
+                    .icon-page{
+                        span:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .info-footer{
+            img{
+                height: 85px;
+                position: relative;
+                right: 35%;
+            }
+        }
+    }
+}
+
+//for mobile 
+@media (min-width:320px) and (max-width:767px){
+    body{
+        footer{
+            .foot{
+                @include df-fc;
+                .info-footer{
+                    img{
+                        width: 80px;
+                        position: relative;
+                        left: 14%;
+                    }
+                    p{
+                        width: 100%;
+                        margin: auto;
+                    }
+                }
+                .foot-contact{
+                  margin-right: 90px;
+                  .follow-footer, .our-store{
+                    h2{
+                        font-size: $font-size + 6px;
+                    }
+                    span:nth-child(2){
+                        font-size: $font-size + 2px;
+                    }
+                  }
+                 
+                }
+                .get-toch{
+                    h2{
+                        font-size: $font-size + 6px;
+                    }
+                }
+            }
+        }
+    }
+}
