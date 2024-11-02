@@ -44,6 +44,7 @@ p{
     width: 90%;
     margin: auto;
     @include df-jcc-alc;
+    align-items: normal;
     column-gap: $gap * 4;
     margin-top: 64px;
     .card1 {
@@ -64,6 +65,10 @@ p{
                 width: 60%;
                 margin: auto;
                 transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            .img-one {
+               margin-top: 24px;
             }
             img:hover{
                 transform: scale(1.05);
@@ -91,6 +96,7 @@ p{
             }
         }
     }
+   
     .card:hover {
         transform: translateY(-8px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)

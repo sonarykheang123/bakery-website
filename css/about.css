@@ -885,6 +885,10 @@ p {
   margin-top: 24px;
 }
 
+.menu {
+  display: none;
+}
+
 .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
