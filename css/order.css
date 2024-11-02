@@ -752,23 +752,10 @@ p {
   width: 90%;
   margin: auto;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 48px;
-     -moz-column-gap: 48px;
-          column-gap: 48px;
-=======
   justify-content: center;
   align-items: center;
-  align-items: normal;
   -moz-column-gap: 48px;
        column-gap: 48px;
->>>>>>> 7e011bf5ce0401bb91888cdea896835764ee1dbb
   margin-top: 64px;
 }
 .group-cards .card1 {
