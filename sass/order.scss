@@ -47,24 +47,27 @@ p{
         width: 360px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         transition: background-color 0.3s ease, transform 0.3s ease;
-        button {
-            width: 30px;
-            height: 30px;
-            background-color: $white-color;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            border: solid 1px lightgray;
-        }
-        img { 
-            width: 60%;
-            margin: auto;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        img:hover{
-            transform: scale(1.05);
+        form {
+            @include df-fc;
+            input[type=checkbox] {
+                margin-left: 24px;
+                margin-top: 24px;
+                width: 24px;
+                height: 24px;
+                background-color: $white-color;
+            }
+            img { 
+                width: 60%;
+                margin: auto;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+            img:hover{
+                transform: scale(1.05);
+            }
         }
         .footer-card {
-            row-gap: $gap + 
-            2;
+            background: $bg-color;
+            row-gap: $gap + 2;
             width: 100%;
             padding: $padding *2 + 8;
             @include df-fc;
@@ -81,18 +84,14 @@ p{
                     width: 100px;
                     @include df-jcc-alc;
                     border-radius: $border-radius - 14;
-                }
             }
-        }
-
-        .second {
-            background: $bg-color;
         }
     }
     .card:hover {
         transform: translateY(-8px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3)
     }
+}
 }
 .content{
     width: 90%;
@@ -116,7 +115,8 @@ p{
             }
         }
         button{
-            @include button-set;
+            @include button;
+            width: 100px;
             margin-top: $margin *4;
         }
     }    
@@ -141,9 +141,6 @@ button:hover{
     border: solid 1px $primary-color;
     background: none;
     color: $primary-color;
-}
-.footer{
-    margin-top: $margin *4;
 }
 
 //Responsive on tablet
@@ -171,5 +168,66 @@ button:hover{
 
 // responsive on mobile phone
 @media only screen and (min-width:320px) and (max-width: 767px){
+    .banner{
+       height: 40vh;
+       h1{
+        font-size: $font-size + 8;
+       } 
+    }
+    .order-form{
+        font-size: $font-size *3;
+    }
+    .group-cards{
+        .one, .three{
+            display: none;
+        }
+        .two {
+            width: 70%;
+        }
+        .card{
+            form{
+                img{
+                    margin: 24px 0px;
+                    margin: auto;
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .content{
+        width: 80%;
+        @include df-fc;
+        align-items: start;
+        .coupun{
+            form{
+                label{
+                    font-size: $font-size *2;
+                }
+                input{
+                    font-size: $font-size;
+                    margin-top: $margin 0px;
+                }
+            }
+            button{
+                font-size: $font-size;
+            }
 
+        }
+        .total{
+            position: relative;
+            left: 10%;
+            width: 70%;
+            h3{
+                margin-top: $margin *2;
+                font-size: $font-size + 6;
+            }
+        }
+    }
+    .done-button{
+        margin-top: $margin *2;
+        button{
+            padding: 8px;
+            font-size: $font-size + 8;
+        }
+    }
 }
