@@ -4,150 +4,166 @@
 
 // Mobile Style
 @media (min-width: 320px) and (max-width: 767px) {
-    .nav-contain {
-        flex-direction: column;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
-        @include df-fw;
-
-        .menu {
-            display: block;
-            @include df-jcc-alc;
-        }
-
-        .center-nav {
-            padding: $padding;
-            display: none;
-        }
-
-        .logo-icon {
-            display: none;
-        }
-
-        #menu-ul {
-            left: 0;
-            transition: 0.5s;
-        }
-
-        #menu_check:checked ~ .center-nav {
-            display: block;
-            position: absolute;
-            background-color: rgb(168, 211, 177);
+    body{
+        .nav-contain {
+            flex-direction: column;
+            text-align: center;
+            position: fixed;
             width: 100%;
-            left: 0;
-            top: 70px;
+            z-index: 1000;
+            @include df-fw;
+    
+            .menu {
+                display: block;
+                @include df-jcc-alc;
+            }
+    
+            .center-nav {
+                padding: $padding;
+                display: none;
+            }
+    
+            .logo-icon {
+                display: none;
+            }
+    
+            #menu-ul {
+                left: 0;
+                transition: 0.5s;
+            }
+    
+            #menu_check:checked ~ .center-nav {
+                display: block;
+                position: absolute;
+                background-color: rgb(252, 180, 180);
+                width: 100%;
+                left: 0;
+                top: 70px;
+            }
+    
+            #menu_check:checked ~ .logo-icon {
+                display: block;
+                background-color: $primary-color;
+                margin-right: 50px;
+                height: auto;
+                padding: $padding - 4;
+                left: 0;
+                font-size: $font-size - 2;
+                top: 160px;
+            }
         }
-
-        #menu_check:checked ~ .logo-icon {
-            display: block;
-            background-color: $primary-color;
-            margin-right: 50px;
-            height: auto;
-            padding: $padding - 4;
-            left: 0;
-            font-size: $font-size - 2;
-            top: 160px;
+    
+        .img-logo img {
+            max-width: 80px;
         }
-    }
-
-    .img-logo img {
-        max-width: 80px;
-    }
-
-    body {
         .bg-img {
+            background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+            height: 70vh;
             .text {
                 width: 100%;
-
+                margin: auto;
                 h1 {
-                    font-size: $font-size + 30;
+                    font-size: $font-size * 3;
                 }
-            }
-        }
-    }
-
-    .center-nav, .logo-icon {
-        flex-direction: column;
-        gap: 10px;
-
-        span {
-            display: none;
-        }
-    }
-
-    .card {
-        flex-direction: column-reverse;
-        @include df-jcc-alc;
-        padding: $padding + 8;
-
-        .infor-card {
-            width: 90%;
-            margin: 10px auto;
-            text-align: center;
-
-            h1 {
-                font-size: $font-size + 8;
-            }
-        }
-
-        form {
-            width: 90%;
-            margin-right: 120px;
-
-            h1 {
-                font-size: $font-size + 8;
-            }
-        }
-
-        .contact-icon {
-            flex-direction: column;
-            @include df-alc;
-        }
-
-        .icon {
-            gap: 20px;
-        }
-
-        .btn-contact {
-            width: 75%;
-            margin-left: 40px;
-        }
-    }
-
-    .caption {
-        margin-top: $margin * 4;
-        margin-left: $margin * 4;
-        font-size: $font-size + 8;
-        margin-bottom: 20px;
-    }
-
-    .second-card {
-        margin: 0 auto;
-        gap: $gap * 2;
-        @include df-fw;
-        @include df-fc;
-
-        .star1 {
-            margin-bottom: 10px;
-        }
-
-        .cust-card {
-            width: 70%;
-            height: auto;
-            margin: auto;
-
-            .text1 {
-                padding: $padding - 2;
-                margin-top: 14px;
-
-                p, span {
+                p{
+                    font-size: $font-size + 4;
+                }
+                button{
+                    width: 100px;
+                    padding: $padding - 6px;
                     font-size: $font-size;
+
                 }
             }
         }
-    }
+    
+    
+        .center-nav, .logo-icon {
+            flex-direction: column;
+            gap: 10px;
+    
+            span {
+                display: none;
+            }
+        }
+    
+        .card {
+            flex-direction: column-reverse;
+            @include df-jcc-alc;
+            padding: $padding + 8;
+    
+            .infor-card {
+                width: 90%;
+                margin: 10px auto;
+                text-align: center;
+    
+                h1 {
+                    font-size: $font-size + 8;
+                }
+            }
+    
+            form {
+                width: 90%;
+                margin-right: 120px;
+                .info{
+                    input[type="text"]{
+                        width: 250px;
+                    }
+                }
+    
+                h1 {
+                    font-size: $font-size + 8;
+                }
+            }
+    
+            .contact-icon {
+                flex-direction: column;
+                @include df-alc;
+            }
+    
+            .icon {
+                gap: 20px;
+            }
+    
+            .btn-contact {
+                width: 75%;
+                margin-left: 30px;
+            }
+        }
+    
+        .caption {
+            margin-top: $margin * 4;
+            margin-left: $margin * 4;
+            font-size: $font-size + 8;
+            margin-bottom: 20px;
+        }
+    
+        .second-card {
+            margin: 0 auto;
+            gap: $gap * 2;
+            @include df-fw;
+            @include df-fc;
+    
+            .star1 {
+                margin-bottom: 10px;
+            }
+    
+            .cust-card {
+                width: 70%;
+                height: auto;
+                margin: auto;
+    
+                .text1 {
+                    padding: $padding - 2;
+                    margin-top: 14px;
+    
+                    p, span {
+                        font-size: $font-size;
+                    }
+                }
+            }
+        }
+}
 }
 
 /* Tablet Styles */

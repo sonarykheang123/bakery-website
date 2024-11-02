@@ -672,7 +672,7 @@ nav ul.logo-icon span {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .nav-contain {
+  body .nav-contain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -687,7 +687,7 @@ nav ul.logo-icon span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .nav-contain .menu {
+  body .nav-contain .menu {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -699,27 +699,27 @@ nav ul.logo-icon span {
         -ms-flex-align: center;
             align-items: center;
   }
-  .nav-contain .center-nav {
+  body .nav-contain .center-nav {
     padding: 12px;
     display: none;
   }
-  .nav-contain .logo-icon {
+  body .nav-contain .logo-icon {
     display: none;
   }
-  .nav-contain #menu-ul {
+  body .nav-contain #menu-ul {
     left: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .nav-contain #menu_check:checked ~ .center-nav {
+  body .nav-contain #menu_check:checked ~ .center-nav {
     display: block;
     position: absolute;
-    background-color: rgb(168, 211, 177);
+    background-color: rgb(252, 180, 180);
     width: 100%;
     left: 0;
     top: 70px;
   }
-  .nav-contain #menu_check:checked ~ .logo-icon {
+  body .nav-contain #menu_check:checked ~ .logo-icon {
     display: block;
     background-color: #FF6F61;
     margin-right: 50px;
@@ -729,26 +729,39 @@ nav ul.logo-icon span {
     font-size: 10px;
     top: 160px;
   }
-  .img-logo img {
+  body .img-logo img {
     max-width: 80px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 70vh;
   }
   body .bg-img .text {
     width: 100%;
+    margin: auto;
   }
   body .bg-img .text h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
-  .center-nav, .logo-icon {
+  body .bg-img .text p {
+    font-size: 16px;
+  }
+  body .bg-img .text button {
+    width: 100px;
+    padding: 6px;
+    font-size: 12px;
+  }
+  body .center-nav, body .logo-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
   }
-  .center-nav span, .logo-icon span {
+  body .center-nav span, body .logo-icon span {
     display: none;
   }
-  .card {
+  body .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -764,22 +777,25 @@ nav ul.logo-icon span {
             align-items: center;
     padding: 20px;
   }
-  .card .infor-card {
+  body .card .infor-card {
     width: 90%;
     margin: 10px auto;
     text-align: center;
   }
-  .card .infor-card h1 {
+  body .card .infor-card h1 {
     font-size: 20px;
   }
-  .card form {
+  body .card form {
     width: 90%;
     margin-right: 120px;
   }
-  .card form h1 {
+  body .card form .info input[type=text] {
+    width: 250px;
+  }
+  body .card form h1 {
     font-size: 20px;
   }
-  .card .contact-icon {
+  body .card .contact-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -791,20 +807,20 @@ nav ul.logo-icon span {
         -ms-flex-align: center;
             align-items: center;
   }
-  .card .icon {
+  body .card .icon {
     gap: 20px;
   }
-  .card .btn-contact {
+  body .card .btn-contact {
     width: 75%;
-    margin-left: 40px;
+    margin-left: 30px;
   }
-  .caption {
+  body .caption {
     margin-top: 48px;
     margin-left: 48px;
     font-size: 20px;
     margin-bottom: 20px;
   }
-  .second-card {
+  body .second-card {
     margin: 0 auto;
     gap: 24px;
     display: -webkit-box;
@@ -818,19 +834,19 @@ nav ul.logo-icon span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .second-card .star1 {
+  body .second-card .star1 {
     margin-bottom: 10px;
   }
-  .second-card .cust-card {
+  body .second-card .cust-card {
     width: 70%;
     height: auto;
     margin: auto;
   }
-  .second-card .cust-card .text1 {
+  body .second-card .cust-card .text1 {
     padding: 10px;
     margin-top: 14px;
   }
-  .second-card .cust-card .text1 p, .second-card .cust-card .text1 span {
+  body .second-card .cust-card .text1 p, body .second-card .cust-card .text1 span {
     font-size: 12px;
   }
 }
