@@ -525,12 +525,339 @@ footer .foot .get-toch .icon-page {
   margin: 18px 0px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  body .nav-contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .nav-contain .menu {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .nav-contain .center-nav {
+    padding: 12px;
+    display: none;
+  }
+  body .nav-contain .logo-icon {
+    display: none;
+  }
+  body .nav-contain #menu-ul {
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body .nav-contain #menu_check:checked ~ .center-nav {
+    display: block;
+    position: absolute;
+    background-color: rgb(252, 180, 180);
+    width: 100%;
+    left: 0;
+    top: 70px;
+  }
+  body .nav-contain #menu_check:checked ~ .logo-icon {
+    display: block;
+    background-color: #FF6F61;
+    margin-right: 50px;
+    height: auto;
+    padding: 8px;
+    left: 0;
+    font-size: 10px;
+    top: 160px;
+  }
+  body .img-logo img {
+    max-width: 80px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 70vh;
+  }
+  body .bg-img .text {
+    width: 100%;
+    margin: auto;
+  }
+  body .bg-img .text h1 {
+    font-size: 36px;
+  }
+  body .bg-img .text p {
+    font-size: 16px;
+  }
+  body .bg-img .text button {
+    width: 100px;
+    padding: 6px;
+    font-size: 12px;
+  }
+  body .center-nav, body .logo-icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  body .center-nav span, body .logo-icon span {
+    display: none;
+  }
+  body .card2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  body .card2 .infor-card {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  body .card2 .infor-card h1 {
+    font-size: 20px;
+  }
+  body .card2 form {
+    width: 90%;
+    margin-right: 90px;
+  }
+  body .card2 form .info input[type=text] {
+    width: 300px;
+  }
+  body .card2 form h1 {
+    font-size: 20px;
+  }
+  body .card2 .contact-icon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .card2 .icon {
+    gap: 50px;
+  }
+  body .card2 .btn-contact {
+    width: 75%;
+    margin-left: 30px;
+  }
+  body .caption {
+    margin-top: 48px;
+    margin-left: 48px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  body .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  body .second-card .cust-card {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  body .second-card .cust-card .text1 {
+    padding: 10px;
+    margin-top: 14px;
+  }
+  body .second-card .cust-card .text1 p, body .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+}
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .nav-contain .center-nav {
+    font-size: 24px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 30vh;
+  }
+  .menu {
+    display: none;
+  }
+  .card2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .card2 .infor-card {
+    width: 60%;
+    margin: 0 auto 100px auto;
+  }
+  .card2 .info {
+    margin-left: 5%;
+  }
+  .card2 .info input {
+    width: 90%;
+  }
+  .card2 .icon {
+    gap: 30%;
+  }
+  .card2 form h1 {
+    margin-left: 5%;
+  }
+  .card2 form .btn {
+    margin-left: 30%;
+  }
+  .caption {
+    margin-top: 60px;
+    margin-left: 96px;
+  }
+  .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    width: 85%;
+    margin-left: 90px;
+  }
+  .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  .second-card .cust-card {
+    width: 25%;
+    height: auto;
+  }
+  .second-card .cust-card .text1 {
+    padding: 8px;
+    margin-top: 14px;
+  }
+  .second-card .cust-card .text1 p, .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .foot .foot-contact {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px 48px;
+  }
+  .foot .foot-contact .follow-footer {
+    margin: 12px 48px;
+  }
+  .foot .foot-contact .follow-footer .icons-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .foot .foot-contact .follow-footer .icons-img .icon-img span {
+    display: none;
+  }
+  .foot .foot-contact .our-store .icons-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 12px;
+    gap: 12px;
+  }
+  .foot .foot-contact .our-store .icons-page .icon-page span:nth-child(2) {
+    display: none;
+  }
+  .foot .info-footer img {
+    height: 85px;
+    position: relative;
+    right: 35%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  body footer .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .foot .info-footer img {
+    width: 80px;
+    position: relative;
+    left: 14%;
+  }
+  body footer .foot .info-footer p {
+    width: 100%;
+    margin: auto;
+  }
+  body footer .foot .foot-contact {
+    margin-right: 90px;
+  }
+  body footer .foot .foot-contact .follow-footer h2, body footer .foot .foot-contact .our-store h2 {
+    font-size: 18px;
+  }
+  body footer .foot .foot-contact .follow-footer span:nth-child(2), body footer .foot .foot-contact .our-store span:nth-child(2) {
+    font-size: 14px;
+  }
+  body footer .foot .get-toch h2 {
+    font-size: 18px;
+  }
+}
 h1, h3, h4, h5, h6 {
   font-family: "Itim", cursive;
 }
 
 p {
   font-family: "Poppins", serif;
+}
+
+.menu {
+  display: none;
 }
 
 .banner {
@@ -573,7 +900,7 @@ p {
           column-gap: 48px;
   margin-top: 64px;
 }
-.group-cards .card {
+.group-cards .card1 {
   background: white;
   width: 360px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -583,15 +910,23 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.group-cards .card button {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border: solid 1px lightgray;
+.group-cards .card1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.group-cards .card img {
+.group-cards .card1 form input[type=checkbox] {
+  margin-left: 24px;
+  margin-top: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+}
+.group-cards .card1 form img {
   width: 60%;
   margin: auto;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
@@ -599,11 +934,12 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.group-cards .card img:hover {
+.group-cards .card1 form img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-.group-cards .card .footer-card {
+.group-cards .card1 .footer-card {
+  background: #FFF7EF;
   row-gap: 14px;
   width: 100%;
   padding: 32px;
@@ -615,16 +951,16 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.group-cards .card .footer-card h4 {
+.group-cards .card1 .footer-card h4 {
   color: #FF6F61;
 }
-.group-cards .card .footer-card .quantity {
+.group-cards .card1 .footer-card .quantity {
   margin-top: 14px;
 }
-.group-cards .card .footer-card .quantity p {
+.group-cards .card1 .footer-card .quantity p {
   margin-top: 24px;
-  padding: 12px -4;
-  border: none;
+  padding: 8px;
+  border: solid 1px lightgray;
   background: white;
   width: 100px;
   display: -webkit-box;
@@ -636,12 +972,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 12px -4;
+  border-radius: 10px;
 }
-.group-cards .card .second {
-  background: #FFF7EF;
-}
-.group-cards .card:hover {
+.group-cards .card1 .card:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -685,21 +1018,18 @@ p {
   outline: none;
 }
 .content .coupun button {
-  padding: 12px;
-  width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: white;
-  background: #FF6F61;
+  padding: 12px;
+  width: 180px;
   border: none;
-  margin-top: 50px;
+  background: #FF6F61;
+  border-radius: 24px;
+  font-size: 18px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  cursor: pointer;
+  width: 100px;
+  margin-top: 48px;
 }
 .content .total {
   margin-bottom: 48px;
@@ -710,8 +1040,7 @@ p {
   color: #FF6F61;
 }
 
-.done-button button {
-  margin-top: 48px;
+.done-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -721,12 +1050,102 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  padding: 24px;
-  border: none;
-  border-radius: 12px;
-  background: #FF6F61;
+}
+.done-button button {
   color: white;
-  font-size: 16px;
-  font-family: "Itim", cursive;
+  padding: 12px;
+  width: 180px;
+  border: none;
+  background: #FF6F61;
+  border-radius: 24px;
+  font-size: 18px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  cursor: pointer;
+  border: solid 1px #FF6F61;
+}
+
+button:hover {
+  border: solid 1px #FF6F61;
+  background: none;
+  color: #FF6F61;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 50vh;
+  }
+  .banner h1 {
+    font-size: 36px;
+  }
+  .order-form {
+    font-size: 36px;
+  }
+  .group-cards .card img {
+    width: 90%;
+  }
+  .content .total {
+    margin-right: 50px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .order-form {
+    font-size: 36px;
+  }
+  .group-cards .one, .group-cards .three {
+    display: none;
+  }
+  .group-cards .two {
+    width: 70%;
+  }
+  .group-cards .card1 form img {
+    margin: 24px 0px;
+    margin: auto;
+    width: 50%;
+  }
+  .content {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .content .coupun form label {
+    font-size: 24px;
+  }
+  .content .coupun form input {
+    font-size: 12px;
+    margin-top: 12px 0px;
+  }
+  .content .coupun button {
+    font-size: 12px;
+  }
+  .content .total {
+    position: relative;
+    left: 10%;
+    width: 70%;
+  }
+  .content .total h3 {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+  .done-button {
+    margin-top: 24px;
+  }
+  .done-button button {
+    padding: 8px;
+    font-size: 20px;
+  }
 }
