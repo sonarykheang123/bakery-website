@@ -87,7 +87,7 @@
             }
         }
     
-        .card {
+        .card2 {
             flex-direction: column-reverse;
             @include df-jcc-alc;
             padding: $padding + 8;
@@ -182,7 +182,7 @@
     .menu {
         display: none;
     }
-    .card {
+    .card2 {
         @include df-fc;
         flex-direction: column-reverse;
         height: auto;

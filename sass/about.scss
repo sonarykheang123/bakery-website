@@ -38,6 +38,11 @@ p{
         }
     }
 }
+
+.menu {
+    display: none
+}
+
 .card-container {
     @include df-fw;
     width: 90%;
