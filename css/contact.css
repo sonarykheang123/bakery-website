@@ -1086,10 +1086,10 @@ nav ul.logo-icon span {
   }
   body .card form {
     width: 90%;
-    margin-right: 120px;
+    margin-right: 90px;
   }
   body .card form .info input[type=text] {
-    width: 250px;
+    width: 300px;
   }
   body .card form h1 {
     font-size: 20px;
@@ -1107,7 +1107,7 @@ nav ul.logo-icon span {
             align-items: center;
   }
   body .card .icon {
-    gap: 20px;
+    gap: 50px;
   }
   body .card .btn-contact {
     width: 75%;
