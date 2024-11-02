@@ -523,18 +523,8 @@ footer .foot .get-toch .icon-page {
   body .center-nav span, body .logo-icon span {
     display: none;
   }
-<<<<<<< HEAD
-  body .card {
-    flex-direction: column-reverse;
-=======
   body .card2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> b0fc2a640e740c261ff45cca1e42402a05e86c1c
+    flex-direction: column-reverse;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -558,18 +548,8 @@ footer .foot .get-toch .icon-page {
   body .card2 form h1 {
     font-size: 20px;
   }
-<<<<<<< HEAD
-  body .card .contact-icon {
-    flex-direction: column;
-=======
   body .card2 .contact-icon {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> b0fc2a640e740c261ff45cca1e42402a05e86c1c
+    flex-direction: column;
     display: flex;
     align-items: center;
   }
@@ -617,18 +597,12 @@ footer .foot .get-toch .icon-page {
   }
   body .bg-img {
     background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
-    height: 30vh;
+    height: 50vh;
   }
   .menu {
     display: none;
   }
-<<<<<<< HEAD
-  .card {
-=======
   .card2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> b0fc2a640e740c261ff45cca1e42402a05e86c1c
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
@@ -778,25 +752,11 @@ p {
   width: 90%;
   margin: auto;
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
+  align-items: normal;
   -moz-column-gap: 48px;
        column-gap: 48px;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
-  -webkit-column-gap: 48px;
-     -moz-column-gap: 48px;
-          column-gap: 48px;
->>>>>>> b0fc2a640e740c261ff45cca1e42402a05e86c1c
   margin-top: 64px;
 }
 .group-cards .card1 {
