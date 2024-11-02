@@ -44,7 +44,6 @@ p{
     width: 90%;
     margin: auto;
     @include df-jcc-alc;
-    align-items: normal;
     column-gap: $gap * 4;
     margin-top: 64px;
     .card1 {
