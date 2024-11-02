@@ -158,17 +158,14 @@
                 font-size: $font-size + 12;
             }
         }
-
         .bg-img {
             background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
             height: 30vh;
         }
     }
-
     .menu {
         display: none;
     }
-
     .card {
         @include df-fc;
         flex-direction: column-reverse;
@@ -195,7 +192,6 @@
             h1 {
                 margin-left: 5%;
             }
-
             .btn {
                 margin-left: 30%;
             }
