@@ -615,7 +615,7 @@ footer .foot .get-toch .icon-page {
   body .center-nav span, body .logo-icon span {
     display: none;
   }
-  body .card {
+  body .card2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -631,25 +631,25 @@ footer .foot .get-toch .icon-page {
             align-items: center;
     padding: 20px;
   }
-  body .card .infor-card {
+  body .card2 .infor-card {
     width: 90%;
     margin: 10px auto;
     text-align: center;
   }
-  body .card .infor-card h1 {
+  body .card2 .infor-card h1 {
     font-size: 20px;
   }
-  body .card form {
+  body .card2 form {
     width: 90%;
     margin-right: 90px;
   }
-  body .card form .info input[type=text] {
+  body .card2 form .info input[type=text] {
     width: 300px;
   }
-  body .card form h1 {
+  body .card2 form h1 {
     font-size: 20px;
   }
-  body .card .contact-icon {
+  body .card2 .contact-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -661,10 +661,10 @@ footer .foot .get-toch .icon-page {
         -ms-flex-align: center;
             align-items: center;
   }
-  body .card .icon {
+  body .card2 .icon {
     gap: 50px;
   }
-  body .card .btn-contact {
+  body .card2 .btn-contact {
     width: 75%;
     margin-left: 30px;
   }
@@ -716,7 +716,7 @@ footer .foot .get-toch .icon-page {
   .menu {
     display: none;
   }
-  .card {
+  .card2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -727,23 +727,23 @@ footer .foot .get-toch .icon-page {
     flex-direction: column-reverse;
     height: auto;
   }
-  .card .infor-card {
+  .card2 .infor-card {
     width: 60%;
     margin: 0 auto 100px auto;
   }
-  .card .info {
+  .card2 .info {
     margin-left: 5%;
   }
-  .card .info input {
+  .card2 .info input {
     width: 90%;
   }
-  .card .icon {
+  .card2 .icon {
     gap: 30%;
   }
-  .card form h1 {
+  .card2 form h1 {
     margin-left: 5%;
   }
-  .card form .btn {
+  .card2 form .btn {
     margin-left: 30%;
   }
   .caption {
