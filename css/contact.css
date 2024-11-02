@@ -353,7 +353,7 @@ nav ul.logo-icon span {
 }
 .card h1 {
   color: #FF6F61;
-  font-size: 32px;
+  font-size: 24px;
 }
 .card .contact-icon, .card .info {
   margin: 12px;
@@ -381,7 +381,7 @@ nav ul.logo-icon span {
 .card .info input {
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 110%;
+  width: 130%;
   height: 5vh;
   border: none;
   padding: 12px;
@@ -760,11 +760,12 @@ nav ul.logo-icon span {
 }
 .second-card .cust-card {
   width: 26%;
-  height: 55vh;
+  height: 60vh;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin-top: 60px;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 18px;
 }
 .second-card .cust-card img {
   margin-top: 50px;
@@ -778,7 +779,8 @@ nav ul.logo-icon span {
 .second-card .cust-card .text1 {
   margin-top: 28px;
 }
-.second-card .cust-card span, .second-card .cust-card p {
+.second-card .cust-card span,
+.second-card .cust-card p {
   font-size: 14px;
 }
 .second-card .cust-card .star1 {
@@ -792,7 +794,6 @@ nav ul.logo-icon span {
 .icon i {
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .icon i:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -813,8 +814,276 @@ nav ul.logo-icon span {
   margin-left: 132px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  body .nav-contain {
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .nav-contain .menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .nav-contain .center-nav {
+    padding: 12px;
+    display: none;
+  }
+  body .nav-contain .logo-icon {
+    display: none;
+  }
+  body .nav-contain #menu-ul {
+    left: 0;
+    transition: 0.5s;
+  }
+  body .nav-contain #menu_check:checked ~ .center-nav {
+    display: block;
+    position: absolute;
+    background-color: rgb(252, 180, 180);
+    width: 100%;
+    left: 0;
+    top: 70px;
+  }
+  body .nav-contain #menu_check:checked ~ .logo-icon {
+    display: block;
+    background-color: #FF6F61;
+    margin-right: 50px;
+    height: auto;
+    padding: 8px;
+    left: 0;
+    font-size: 10px;
+    top: 160px;
+  }
+  body .img-logo img {
+    max-width: 80px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 70vh;
+  }
+  body .bg-img .text {
+    width: 100%;
+    margin: auto;
+  }
+  body .bg-img .text h1 {
+    font-size: 36px;
+  }
+  body .bg-img .text p {
+    font-size: 16px;
+  }
+  body .bg-img .text button {
+    width: 100px;
+    padding: 6px;
+    font-size: 12px;
+  }
+  body .center-nav, body .logo-icon {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body .center-nav span, body .logo-icon span {
+    display: none;
+  }
+  body .card {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  body .card .infor-card {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  body .card .infor-card h1 {
+    font-size: 20px;
+  }
+  body .card form {
+    width: 90%;
+    margin-right: 90px;
+  }
+  body .card form .info input[type=text] {
+    width: 300px;
+  }
+  body .card form h1 {
+    font-size: 20px;
+  }
+  body .card .contact-icon {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  body .card .icon {
+    gap: 50px;
+  }
+  body .card .btn-contact {
+    width: 75%;
+    margin-left: 30px;
+  }
+  body .caption {
+    margin-top: 48px;
+    margin-left: 48px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  body .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  body .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  body .second-card .cust-card {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  body .second-card .cust-card .text1 {
+    padding: 10px;
+    margin-top: 14px;
+  }
+  body .second-card .cust-card .text1 p, body .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+}
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .nav-contain .center-nav {
+    font-size: 24px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 30vh;
+  }
+  .menu {
+    display: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .card .infor-card {
+    width: 60%;
+    margin: 0 auto 100px auto;
+  }
+  .card .info {
+    margin-left: 5%;
+  }
+  .card .info input {
+    width: 90%;
+  }
+  .card .icon {
+    gap: 30%;
+  }
+  .card form h1 {
+    margin-left: 5%;
+  }
+  .card form .btn {
+    margin-left: 30%;
+  }
+  .caption {
+    margin-top: 60px;
+    margin-left: 96px;
+  }
+  .second-card {
+    margin: 0 auto;
+    gap: 24px;
+    width: 85%;
+    margin-left: 90px;
+  }
+  .second-card .star1 {
+    margin-bottom: 10px;
+  }
+  .second-card .cust-card {
+    width: 25%;
+    height: auto;
+  }
+  .second-card .cust-card .text1 {
+    padding: 8px;
+    margin-top: 14px;
+  }
+  .second-card .cust-card .text1 p, .second-card .cust-card .text1 span {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .foot .foot-contact {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 48px;
+  }
+  .foot .foot-contact .follow-footer {
+    margin: 12px 48px;
+  }
+  .foot .foot-contact .follow-footer .icons-img {
+    display: flex;
+    text-align: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .foot .foot-contact .follow-footer .icons-img .icon-img span {
+    display: none;
+  }
+  .foot .foot-contact .our-store .icons-page {
+    display: flex;
+    margin-top: 12px;
+    gap: 12px;
+  }
+  .foot .foot-contact .our-store .icons-page .icon-page span:nth-child(2) {
+    display: none;
+  }
+  .foot .info-footer img {
+    height: 85px;
+    position: relative;
+    right: 35%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  body footer .foot {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .foot .info-footer img {
+    width: 80px;
+    position: relative;
+    left: 14%;
+  }
+  body footer .foot .info-footer p {
+    width: 100%;
+    margin: auto;
+  }
+  body footer .foot .foot-contact {
+    margin-right: 90px;
+  }
+  body footer .foot .foot-contact .follow-footer h2, body footer .foot .foot-contact .our-store h2 {
+    font-size: 18px;
+  }
+  body footer .foot .foot-contact .follow-footer span:nth-child(2), body footer .foot .foot-contact .our-store span:nth-child(2) {
+    font-size: 14px;
+  }
+  body footer .foot .get-toch h2 {
+    font-size: 18px;
+  }
+}
 h1 {
   font-family: "Itim", cursive;
+}
+
+.menu {
+  display: none;
 }
 
 .bg-img {

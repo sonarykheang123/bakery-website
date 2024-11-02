@@ -1,62 +1,76 @@
 @import "./variable";
 @import "../mixins/groupmixin";
 
-.second-card{
+
+
+
+.second-card {
     @include df;
     width: 80%;
     margin-left: 200px;
-    gap: $gap  * 5;
-    .cust-card{
-    width: 26%;
-    height: 55vh;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    margin-top: $margin * 5;
-    transition: transform 0.3s, box-shadow 0.3s;
-    img{
-        margin-top: 50px;
-        width: 70px;
-        border-radius: $border-radius + 24;
+    gap: $gap * 5;
+
+    .cust-card {
+        width: 26%;
+        height: 60vh;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-top: $margin * 5;
         transition: transform 0.3s, box-shadow 0.3s;
+        margin-left: 18px;
+
+        img {
+            margin-top: 50px;
+            width: 70px;
+            border-radius: $border-radius + 24;
+            transition: transform 0.3s, box-shadow 0.3s;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .text1 {
+            margin-top: $margin + 16;
+        }
+
+        span,
+        p {
+            font-size: $font-size + 2;
+        }
+
+        .star1 {
+            color: orange;
+            margin-top: $margin;
+
+            span {
+                font-size: $font-size + 8;
+            }
+        }
     }
-    img:hover{
-        transform: scale(1.05);
-    }
-    .text1{
-        margin-top: $margin + 16;
-    }
-    span,p{
-        font-size: $font-size + 2;
-    }
-    .star1{
-        color: orange;
-        margin-top: $margin; 
-    }
-    .star1 span{
-        font-size: $font-size + 8;
-    }  
-}
 }
 
-    .icon i{
+.icon i {
     transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .icon i:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 
-    }
-    .cust-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-   .btn-contact:hover{
-    background: $third-color;
-    }
-    .caption{
-    color: $primary-color;
-    margin: {
-        top: $margin *5;
-        left: $margin * 11;
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 }
+
+.cust-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-contact:hover {
+    background: $third-color;
+}
+
+.caption {
+    color: $primary-color;
+    margin-top: $margin * 5;
+    margin-left: $margin * 11;
+}
+
