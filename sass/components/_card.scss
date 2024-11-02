@@ -120,6 +120,8 @@
             height: 400px;
             width: 500px;
             margin-left: $margin * 4 + 12px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             border-top-right-radius: 24px;
             border-bottom-right-radius: 24px;
         }
