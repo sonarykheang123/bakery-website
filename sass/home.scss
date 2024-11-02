@@ -2,7 +2,7 @@
 
 @import "./mixins/responsive";
 @import './mixins/responsive';
-
+@import './mixins/respondsive-contact';
 @import './components/card';
 @import './components/footer';
 @import './components/navbar';
@@ -15,6 +15,9 @@
 body{
     background: $bg-color;
 }
+.menu{
+    display: none;
+}
 header{
     background-image: url(../image/home/background.jpg);
     height: 86vh;
@@ -26,7 +29,7 @@ header{
         font-size: $font-size * 2 + 4;
         transition: 0.4s linear;
         position: relative;
-        top: 25%;
+        top: 35%;
         button{
             @include button;
             margin-top: $margin * 2;

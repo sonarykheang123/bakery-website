@@ -5,6 +5,12 @@
 
 .nav-contain{
     background: $third-color;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    @include df-fw;
 }
 nav{
     @include df-jcb-alc;
