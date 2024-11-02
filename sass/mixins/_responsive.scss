@@ -1,8 +1,6 @@
 @import './groupmixin';
 @import '../components/variable';
 
-// <<<<<<< HEAD
-// =======
 // responsive teblet
 @media (min-width: 768px ) and (max-width:1024px) {
     body{
@@ -153,7 +151,7 @@
                             margin: auto;
                             margin-left: $margin * 2;
                             h2{
-                                font-size: $font-size + 4px;
+                                font-size: $font-size + 2px;
                             }
                             p{
                                 font-size: $font-size - 4px;
