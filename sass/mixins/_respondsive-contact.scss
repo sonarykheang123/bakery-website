@@ -2,26 +2,73 @@
 @import "../components/variable";
 
 
+// Mobile Style
 @media (min-width: 320px) and (max-width: 767px) {
     .nav-contain {
         flex-direction: column;
         text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        @include df-fw;
+
+        .menu {
+            display: block;
+            @include df-jcc-alc;
+        }
+
+        .center-nav {
+            padding: $padding;
+            display: none;
+        }
+
+        .logo-icon {
+            display: none;
+        }
+
+        #menu-ul {
+            left: 0;
+            transition: 0.5s;
+        }
+
+        #menu_check:checked ~ .center-nav {
+            display: block;
+            position: absolute;
+            background-color: rgb(168, 211, 177);
+            width: 100%;
+            left: 0;
+            top: 70px;
+        }
+
+        #menu_check:checked ~ .logo-icon {
+            display: block;
+            background-color: $primary-color;
+            margin-right: 50px;
+            height: auto;
+            padding: $padding - 4;
+            left: 0;
+            font-size: $font-size - 2;
+            top: 160px;
+        }
     }
 
     .img-logo img {
         max-width: 80px;
     }
 
-    .bg-img .text h1 {
-        font-size: ($font-size + 12);
+    body {
+        .bg-img {
+            .text {
+                width: 100%;
+
+                h1 {
+                    font-size: $font-size + 30;
+                }
+            }
+        }
     }
 
-    .bg-img p {
-        font-size: ($font-size - 8);
-    }
-
-    .center-nav,
-    .logo-icon {
+    .center-nav, .logo-icon {
         flex-direction: column;
         gap: 10px;
 
@@ -33,7 +80,7 @@
     .card {
         flex-direction: column-reverse;
         @include df-jcc-alc;
-        padding: ($padding + 8);
+        padding: $padding + 8;
 
         .infor-card {
             width: 90%;
@@ -41,8 +88,7 @@
             text-align: center;
 
             h1 {
-                font-size: ($font-size + 8);
-               
+                font-size: $font-size + 8;
             }
         }
 
@@ -51,12 +97,11 @@
             margin-right: 120px;
 
             h1 {
-                font-size: ($font-size + 8);  
+                font-size: $font-size + 8;
             }
         }
 
         .contact-icon {
-
             flex-direction: column;
             @include df-alc;
         }
@@ -72,34 +117,32 @@
     }
 
     .caption {
-        margin-top: ($margin * 4);
-        margin-left: ($margin * 4 );
-        font-size: ($font-size + 8);
+        margin-top: $margin * 4;
+        margin-left: $margin * 4;
+        font-size: $font-size + 8;
         margin-bottom: 20px;
     }
 
     .second-card {
         margin: 0 auto;
-        gap: ($gap * 2);
+        gap: $gap * 2;
         @include df-fw;
         @include df-fc;
-      
 
         .star1 {
             margin-bottom: 10px;
         }
 
         .cust-card {
-            width: 70%; 
+            width: 70%;
             height: auto;
             margin: auto;
 
             .text1 {
-                padding: ($padding - 2);
+                padding: $padding - 2;
                 margin-top: 14px;
 
-                p,
-                span {
+                p, span {
                     font-size: $font-size;
                 }
             }
@@ -107,33 +150,25 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        .nav-contain {
+            .center-nav {
+                font-size: $font-size + 12;
+            }
+        }
+
+        .bg-img {
+            background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+            height: 30vh;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
     .card {
         @include df-fc;
         flex-direction: column-reverse;
@@ -151,13 +186,16 @@
                 width: 90%;
             }
         }
+
         .icon {
             gap: 30%;
         }
+
         form {
             h1 {
                 margin-left: 5%;
             }
+
             .btn {
                 margin-left: 30%;
             }
@@ -178,6 +216,7 @@
         .star1 {
             margin-bottom: 10px;
         }
+
         .cust-card {
             width: 25%;
             height: auto;
@@ -186,20 +225,12 @@
                 padding: $padding - 4;
                 margin-top: 14px;
 
-                p,
-                span {
+                p, span {
                     font-size: $font-size;
                 }
             }
         }
     }
 
-
-    footer .foot {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-
-    }
-
+   
 }

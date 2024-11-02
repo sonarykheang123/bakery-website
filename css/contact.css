@@ -96,7 +96,7 @@ nav ul.logo-icon span {
 }
 .card h1 {
   color: #FF6F61;
-  font-size: 32px;
+  font-size: 24px;
 }
 .card .contact-icon, .card .info {
   margin: 12px;
@@ -678,26 +678,74 @@ nav ul.logo-icon span {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav-contain .menu {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-contain .center-nav {
+    padding: 12px;
+    display: none;
+  }
+  .nav-contain .logo-icon {
+    display: none;
+  }
+  .nav-contain #menu-ul {
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .nav-contain #menu_check:checked ~ .center-nav {
+    display: block;
+    position: absolute;
+    background-color: rgb(168, 211, 177);
+    width: 100%;
+    left: 0;
+    top: 70px;
+  }
+  .nav-contain #menu_check:checked ~ .logo-icon {
+    display: block;
+    background-color: #FF6F61;
+    margin-right: 50px;
+    height: auto;
+    padding: 8px;
+    left: 0;
+    font-size: 10px;
+    top: 160px;
   }
   .img-logo img {
     max-width: 80px;
   }
-  .bg-img .text h1 {
-    font-size: 24px;
+  body .bg-img .text {
+    width: 100%;
   }
-  .bg-img p {
-    font-size: 4px;
+  body .bg-img .text h1 {
+    font-size: 42px;
   }
-  .center-nav,
-  .logo-icon {
+  .center-nav, .logo-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
   }
-  .center-nav span,
-  .logo-icon span {
+  .center-nav span, .logo-icon span {
     display: none;
   }
   .card {
@@ -782,13 +830,22 @@ nav ul.logo-icon span {
     padding: 10px;
     margin-top: 14px;
   }
-  .second-card .cust-card .text1 p,
-  .second-card .cust-card .text1 span {
+  .second-card .cust-card .text1 p, .second-card .cust-card .text1 span {
     font-size: 12px;
   }
 }
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
+  body .nav-contain .center-nav {
+    font-size: 24px;
+  }
+  body .bg-img {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
+    height: 30vh;
+  }
+  .menu {
+    display: none;
+  }
   .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -840,22 +897,16 @@ nav ul.logo-icon span {
     padding: 8px;
     margin-top: 14px;
   }
-  .second-card .cust-card .text1 p,
-  .second-card .cust-card .text1 span {
+  .second-card .cust-card .text1 p, .second-card .cust-card .text1 span {
     font-size: 12px;
-  }
-  footer .foot {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    text-align: left;
   }
 }
 h1 {
   font-family: "Itim", cursive;
+}
+
+.menu {
+  display: none;
 }
 
 .bg-img {

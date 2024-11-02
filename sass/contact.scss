@@ -12,6 +12,9 @@
 h1{
     font-family: "Itim", cursive;
 }
+.menu{
+    display: none;
+}
 .bg-img{
     background-image: url(https://cdn.pixabay.com/photo/2018/08/18/10/36/roll-3614535_1280.jpg);
     @include bg-img;
