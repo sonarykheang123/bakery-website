@@ -15,7 +15,9 @@ h1, h3, h4, h5, h6{
 p{
     font-family: "Poppins", serif;
 }
-
+.menu{
+    display: none;
+}
 //banner
 
 .banner {
@@ -68,10 +70,7 @@ p{
             }
         }
         .footer-card {
-<<<<<<< HEAD
-=======
             background: $bg-color;
->>>>>>> about-page
             row-gap: $gap + 2;
             width: 100%;
             padding: $padding *2 + 8;
@@ -88,12 +87,7 @@ p{
                     background: $white-color;
                     width: 100px;
                     @include df-jcc-alc;
-<<<<<<< HEAD
-                    border-radius: $border-radius  - 16;
-                }
-=======
                     border-radius: $border-radius - 14;
->>>>>>> about-page
             }
         }
     }
@@ -143,20 +137,6 @@ p{
 .done-button{
     @include df-jcc-alc;
     button{
-<<<<<<< HEAD
-        margin-top: 48px;
-        @include df-jcc-alc;
-        margin: auto;
-        padding: $padding *2;
-        border: none;
-        border-radius: $border-radius - 12;
-        background: $primary-color;
-        color: $white-color;
-        font-size: $font-size + 4;
-        font-family: "Itim", cursive;
-    }
-}
-=======
         @include button;
         border: solid 1px $primary-color;
     }
@@ -255,4 +235,3 @@ button:hover{
         }
     }
 }
->>>>>>> about-page

@@ -225,18 +225,11 @@ p{
                 transform: scale(1.05);
             }
             p{
-<<<<<<< HEAD
-// <<<<<<< HEAD
-// =======
-// // <<<<<<< HEAD
-// // =======
 
-// // >>>>>>> order-page
-// >>>>>>> cb93c00d9f5accc9b007b387e274ceeb71e046fa
                 margin-top: 56px;
-=======
+
                 margin-top: $margin *3;
->>>>>>> about-page
+
                 font-size: $font-size + 12;
                 transition: background-color 0.3s ease, transform 0.3s ease;
             }

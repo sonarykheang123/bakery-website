@@ -856,6 +856,10 @@ p {
   font-family: "Poppins", serif;
 }
 
+.menu {
+  display: none;
+}
+
 .banner {
   background-image: url(../image/order/banner-order.jpg);
   background-position: center;
@@ -968,11 +972,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
-  border-radius: 8px;
-=======
   border-radius: 10px;
->>>>>>> about-page
 }
 .group-cards .card .card:hover {
   -webkit-transform: translateY(-8px);
@@ -1053,10 +1053,6 @@ p {
 }
 .done-button button {
   color: white;
-<<<<<<< HEAD
-  font-size: 16px;
-  font-family: "Itim", cursive;
-=======
   padding: 12px;
   width: 180px;
   border: none;
@@ -1152,5 +1148,4 @@ button:hover {
     padding: 8px;
     font-size: 20px;
   }
->>>>>>> about-page
 }
