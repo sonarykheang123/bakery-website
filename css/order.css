@@ -900,7 +900,7 @@ p {
           column-gap: 48px;
   margin-top: 64px;
 }
-.group-cards .card {
+.group-cards .card1 {
   background: white;
   width: 360px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -910,7 +910,7 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.group-cards .card form {
+.group-cards .card1 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,14 +919,14 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.group-cards .card form input[type=checkbox] {
+.group-cards .card1 form input[type=checkbox] {
   margin-left: 24px;
   margin-top: 24px;
   width: 24px;
   height: 24px;
   background-color: white;
 }
-.group-cards .card form img {
+.group-cards .card1 form img {
   width: 60%;
   margin: auto;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
@@ -934,11 +934,11 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.group-cards .card form img:hover {
+.group-cards .card1 form img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-.group-cards .card .footer-card {
+.group-cards .card1 .footer-card {
   background: #FFF7EF;
   row-gap: 14px;
   width: 100%;
@@ -951,13 +951,13 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.group-cards .card .footer-card h4 {
+.group-cards .card1 .footer-card h4 {
   color: #FF6F61;
 }
-.group-cards .card .footer-card .quantity {
+.group-cards .card1 .footer-card .quantity {
   margin-top: 14px;
 }
-.group-cards .card .footer-card .quantity p {
+.group-cards .card1 .footer-card .quantity p {
   margin-top: 24px;
   padding: 8px;
   border: solid 1px lightgray;
@@ -974,7 +974,7 @@ p {
           align-items: center;
   border-radius: 10px;
 }
-.group-cards .card .card:hover {
+.group-cards .card1 .card:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -1104,7 +1104,7 @@ button:hover {
   .group-cards .two {
     width: 70%;
   }
-  .group-cards .card form img {
+  .group-cards .card1 form img {
     margin: 24px 0px;
     margin: auto;
     width: 50%;

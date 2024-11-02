@@ -46,7 +46,7 @@ p{
     @include df-jcc-alc;
     column-gap: $gap * 4;
     margin-top: 64px;
-    .card {
+    .card1 {
         background: $white-color;
         width: 360px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -188,7 +188,7 @@ button:hover{
         .two {
             width: 70%;
         }
-        .card{
+        .card1{
             form{
                 img{
                     margin: 24px 0px;
