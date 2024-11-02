@@ -3,7 +3,8 @@
 @import './components/navbar';
 @import './components/variable';
 @import './mixins/groupmixin';
-
+@import "./mixins/responsive-footer";
+@import "./mixins/respondsive-contact";
 body {
     background:  $bg-color;
 }
